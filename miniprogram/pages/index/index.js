@@ -39,5 +39,10 @@ Page({
       data: {}
     });
     app.globalData.allTimes = res.result.allTimes;
+  },
+
+  jump(e) {
+    const { url } = e.currentTarget.dataset;
+    wx.navigateTo({ url });
   }
 });

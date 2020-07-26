@@ -1,0 +1,14 @@
+/* miniprogram/pages/mlui/calendar/index.wxss */
+.pre,
+.next {
+  width: 80rpx;
+  line-height: 100rpx;
+}
+.date-picker {
+  height: 100rpx;
+  line-height: 100rpx;
+  flex: 1;
+}
+.result {
+  margin-top: 100rpx;
+}
