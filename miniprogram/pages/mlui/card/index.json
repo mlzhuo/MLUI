@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText": "卡片",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "ml-card": "../../../components/ml-card/ml-card"
+    "ml-card": "../../../components/ml-card/ml-card",
+    "ml-navigation": "../../../components/ml-navigation/ml-navigation"
   }
 }

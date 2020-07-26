@@ -37,7 +37,7 @@
   border-radius: 50%;
   box-sizing: border-box;
 }
-.ml-calendar .day .day-line .day-item.toady {
+.ml-calendar .day .day-line .day-item.today {
   color: #69cdff;
   border: 2rpx solid #69cdff;
 }

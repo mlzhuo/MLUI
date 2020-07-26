@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText": "月历",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "ml-calendar": "../../../components/ml-calendar/ml-calendar"
+    "ml-calendar": "../../../components/ml-calendar/ml-calendar",
+    "ml-navigation": "../../../components/ml-navigation/ml-navigation"
   }
 }
