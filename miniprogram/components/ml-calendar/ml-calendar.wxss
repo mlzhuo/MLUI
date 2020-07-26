@@ -1,37 +1,58 @@
 /* components/calendar/index.wxss */
-@import '/app.wxss';
-
 .ml-calendar {
   min-height: 370rpx;
+  padding: 24rpx;
+  background: #fff;
+  color: #353535;
+}
+.ml-calendar .week {
+  display: flex;
+  justify-content: space-around;
 }
 .ml-calendar .week .week-item {
   height: 50rpx;
   line-height: 50rpx;
   width: 80rpx;
+  font-weight: bold;
+  text-align: center;
 }
-
-.day .day-line .day-item {
+.ml-calendar .bg-blue {
+  background-color: #69cdff;
+}
+.ml-calendar .bg-white {
+  background-color: #fff;
+}
+.ml-calendar .day .day-line {
+  display: flex;
+  justify-content: space-around;
+}
+.ml-calendar .day .day-line .day-item {
   height: 80rpx;
   line-height: 80rpx;
   width: 80rpx;
   overflow: hidden;
   position: relative;
+  margin-top: 24rpx;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
-
-.day-flag {
+.ml-calendar .day .day-line .day-item.toady {
+  color: #69cdff;
+  border: 2rpx solid #69cdff;
+}
+.ml-calendar .day .day-line .day-item.active {
+  border: none;
+  color: #fff;
+  background-color: #69cdff;
+  font-weight: bold;
+}
+.ml-calendar .day .day-line .day-item .day-flag {
   position: absolute;
   width: 8rpx;
   height: 8rpx;
   left: 50%;
   transform: translateX(-50%);
   bottom: 5rpx;
-}
-
-.today {
-  border-width: 2rpx;
-  border-style: solid;
-}
-
-.active {
-  border: none;
+  border-radius: 50%;
 }

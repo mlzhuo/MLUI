@@ -1,9 +1,13 @@
 <!-- index.wxml -->
 <ml-navigation isShowHome="{{false}}"></ml-navigation>
-<view class="ml-container">
-  <view class="ml-gird">
-    <view class="ml-gird-item" data-url="../mlui/calendar/index" bindtap="jump">月历</view>
-    <view class="ml-gird-item ml-gird-item-center" data-url="../mlui/navigation/index" bindtap="jump">导航</view>
-    <view class="ml-gird-item"></view>
-  </view>
+<view class="container black">
+  <ml-card>
+    <view class="ml-gird">
+      <view class="ml-gird-item" data-url="../mlui/calendar/index" bindtap="jump">月历</view>
+      <view class="ml-gird-item ml-gird-item-center" data-url="../mlui/navigation/index" bindtap="jump">
+        导航
+      </view>
+      <view class="ml-gird-item" data-url="../mlui/card/index" bindtap="jump">卡片</view>
+    </view>
+  </ml-card>
 </view>

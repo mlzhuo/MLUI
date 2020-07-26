@@ -1,0 +1,4 @@
+<!-- components/ml-card/ml-card.wxml -->
+<view class="ml-card" style="{{_cardStyle}}">
+  <slot></slot>
+</view>

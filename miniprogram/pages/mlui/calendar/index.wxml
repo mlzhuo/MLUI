@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/calendar/index.wxml -->
-<view class="picker-view flex bg-white margin-bottom-m text-align-center padding-left-m padding-right-m">
+<view class="picker-view">
   <view class="pre" bindtap="preMonth">前月</view>
   <picker class="date-picker" mode="date" value="{{yearMonth}}" fields="month" bindchange="bindDateChange">
     <view>{{tool.setDate(yearMonth)}}</view>
@@ -7,7 +7,7 @@
   <view class="next" bindtap="nextMonth">下月</view>
 </view>
 <ml-calendar bind:tapDateAction="tapDateAction" yearMonth="{{yearMonth}}" dataObj="{{dataObj}}"></ml-calendar>
-<view class="result text-align-center">当前选择日期：{{date}}</view>
+<view class="result">当前选择日期：{{date}}</view>
 <wxs module="tool">
   module.exports = {
     setDate: function(dateStr) {

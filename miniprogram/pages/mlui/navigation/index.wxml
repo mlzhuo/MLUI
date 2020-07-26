@@ -1,2 +1,2 @@
 <!-- miniprogram/pages/mlui/navigation/index.wxml -->
-<ml-navigation title="自定义导航栏"></ml-navigation>
+<ml-navigation title="自定义导航栏" bgColor="#69cdff" color="#fff"></ml-navigation>

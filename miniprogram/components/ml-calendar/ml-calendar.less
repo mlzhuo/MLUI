@@ -1,0 +1,70 @@
+/* components/calendar/index.wxss */
+// @import '../../app.less';
+@padding: 24rpx;
+@margin: 24rpx;
+@black: #353535;
+@blue: #69cdff;
+@white: #fff;
+
+.ml-calendar {
+  min-height: 370rpx;
+  padding: @padding;
+  background: @white;
+  color: @black;
+  .week {
+    display: flex;
+    justify-content: space-around;
+    .week-item {
+      height: 50rpx;
+      line-height: 50rpx;
+      width: 80rpx;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .bg-blue {
+    background-color: @blue;
+  }
+  .bg-white {
+    background-color: @white;
+  }
+
+  .day {
+    .day-line {
+      display: flex;
+      justify-content: space-around;
+      .day-item {
+        height: 80rpx;
+        line-height: 80rpx;
+        width: 80rpx;
+        overflow: hidden;
+        position: relative;
+        margin-top: @margin;
+        text-align: center;
+        border-radius: 50%;
+        box-sizing: border-box;
+
+        &.toady {
+          color: @blue;
+          border: 2rpx solid @blue;
+        }
+        &.active {
+          border: none;
+          color: @white;
+          background-color: @blue;
+          font-weight: bold;
+        }
+        .day-flag {
+          position: absolute;
+          width: 8rpx;
+          height: 8rpx;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 5rpx;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

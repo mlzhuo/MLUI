@@ -1,4 +1,7 @@
 /**index.wxss**/
+.container {
+  padding: 24rpx;
+}
 .ml-gird {
   width: 100%;
   display: flex;
@@ -11,10 +14,10 @@
   width: 33%;
   height: 160rpx;
   line-height: 160rpx;
-  text-align: center;
   box-sizing: border-box;
+  text-align: center;
 }
 .ml-gird-item-center {
-  border-left: 2rpx solid #efefef;
-  border-right: 2rpx solid #efefef;
+  border-left: 1rpx solid #efefef;
+  border-right: 1rpx solid #efefef;
 }

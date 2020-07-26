@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/layout/index",
+    "pages/introduction/index",
     "pages/mlui/calendar/index",
-    "pages/mlui/navigation/index"
+    "pages/mlui/navigation/index",
+    "pages/mlui/card/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -12,5 +15,30 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#69cdff",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/zujian.png",
+        "selectedIconPath": "images/zujian-active.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/layout/index",
+        "iconPath": "images/buju.png",
+        "selectedIconPath": "images/buju-active.png",
+        "text": "布局"
+      },
+      {
+        "pagePath": "pages/introduction/index",
+        "iconPath": "images/mlui.png",
+        "selectedIconPath": "images/mlui-active.png",
+        "text": "MLUI"
+      }
+    ]
+  }
 }

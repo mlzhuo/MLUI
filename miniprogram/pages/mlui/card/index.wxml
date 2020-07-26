@@ -1,0 +1,20 @@
+<!-- miniprogram/pages/mlui/card/index.wxml -->
+<view class="card">
+  <ml-card height="400rpx" bgColor="#69cdff"></ml-card>
+  <view class="sub-view">
+    <view class="item">
+      <ml-card height="200rpx" bgColor="#4bd197"></ml-card>
+    </view>
+    <view class="item">
+      <ml-card height="200rpx" bgColor="#ff5c5c"></ml-card>
+    </view>
+  </view>
+  <view class="sub-view">
+    <view class="item">
+      <ml-card height="200rpx" bgColor="#ffcb47"></ml-card>
+    </view>
+    <view class="item">
+      <ml-card height="200rpx" bgColor="#ff8ccb"></ml-card>
+    </view>
+  </view>
+</view>

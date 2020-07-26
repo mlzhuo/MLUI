@@ -1,2 +1,2 @@
 /**app.wxss**/
-@import './style/mlui.wxss'
+@import '/style/mlui.wxss';

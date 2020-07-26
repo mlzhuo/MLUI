@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "卡片",
+  "usingComponents": {
+    "ml-card": "../../../components/ml-card/ml-card"
+  }
+}
