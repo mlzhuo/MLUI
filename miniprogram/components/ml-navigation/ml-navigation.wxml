@@ -1,0 +1,12 @@
+<!-- components/ml-navigation/ml-navigation.wxml -->
+<view>
+  <button class="navigation-view border-box" style="{{_customBarStyle}}"></button>
+  <button class="navigation-view fixed-view border-box" style="{{_customBarStyle}}">
+    <view class="inner bold" style="{{_customBarInnerStyle}}">{{title}}</view>
+    <view class="icon-view flex" style="{{_iconViewStyle}}">
+      <view wx:if="{{isShowBack && _page.length > 1}}" class="iconfont icon-back_light font-xl" style="{{_iconStyle}}" bindtap="back"></view>
+      <view wx:if="{{isShowBack&&isShowHome&&_page.length > 1}}" class="iconfont icon-move font-m" style="color:{{color}}"></view>
+      <view wx:if="{{isShowHome}}" class="iconfont icon-home_light font-xl" style="{{_iconStyle}}" bindtap="home"></view>
+    </view>
+  </button>
+</view>

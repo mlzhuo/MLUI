@@ -1,0 +1,27 @@
+/* components/ml-navigation/ml-navigation.wxss */
+@import '../../style/mlui.wxss';
+
+.navigation-view {
+  width: 100vw !important;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.navigation-view.fixed-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navigation-view .inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navigation-view .icon-view {
+  position: absolute;
+}
+.icon-move {
+  transform: rotate(90deg);
+  font-weight: lighter;
+  opacity: 0.3;
+}

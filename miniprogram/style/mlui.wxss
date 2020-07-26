@@ -1,4 +1,6 @@
 /**mlui.wxss**/
+@import './iconfont.wxss';
+
 page {
   background: #f6f6f6;
   font-size: 32rpx;

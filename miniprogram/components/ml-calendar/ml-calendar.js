@@ -41,7 +41,7 @@ Component({
   },
 
   lifetimes: {
-    attached: function () {
+    attached() {
       // 在组件实例进入页面节点树时执行
       const { datestr } = mlUtils.formatDate(new Date());
       this.setData(
