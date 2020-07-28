@@ -11,8 +11,8 @@ Component({
       value: mlUtils.formatDate(new Date()).datestr.slice(0, 7)
     },
     dataObj: {
-      type: Object,
-      value: {}
+      type: Array,
+      value: []
     }
   },
 
@@ -35,7 +35,7 @@ Component({
   data: {
     _today: '', // 2020-07-26
     _yearMonth: '',
-    _dataObj: {},
+    _dataObj: [],
     _dayList: [],
     _chooseDay: '' // 2020-07-26
   },
@@ -79,7 +79,7 @@ Component({
         _dayList.push({
           _date: _dayItem.datestr,
           _day: _dayItem.d,
-          _isShowPoint: _dataObj[_dayItem.datestr]
+          _isShowPoint: _dataObj.findIndex(v => v == _dayItem.datestr) !== -1
         });
       }
       const _last = _dayList.length % 7 === 0 ? 0 : 7 - (_dayList.length % 7);

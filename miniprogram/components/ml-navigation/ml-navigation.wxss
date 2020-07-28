@@ -28,6 +28,7 @@
   margin: 0;
   position: relative;
   box-sizing: border-box;
+  border-radius: 0;
 }
 .ml-navigation .navigation-view.fixed-view {
   position: fixed;
