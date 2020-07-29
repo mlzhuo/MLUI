@@ -1,6 +1,6 @@
 // miniprogram/pages/mlui/calendar/index.js
 import MLUIUTIL from '../../../utils/mlUtil';
-const mlUtils = new MLUIUTIL();
+const mlutil = new MLUIUTIL();
 Page({
   /**
    * 页面的初始数据
@@ -23,7 +23,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const { y, M, datestr } = mlUtils.formatDate(new Date());
+    const { y, M, datestr } = mlutil.formatDate(new Date());
     this.setData({
       date: datestr,
       yearMonth: y + '-' + M
@@ -40,7 +40,7 @@ Page({
     });
   },
   preMonth() {
-    const yearMonth = mlUtils
+    const yearMonth = mlutil
       .formatDate(
         +new Date(this.data.yearMonth + '-01 00:00:00') - 24 * 3600 * 1000
       )
@@ -48,10 +48,10 @@ Page({
     this.setData({ yearMonth });
   },
   nextMonth() {
-    const { len } = mlUtils.formatDate(
+    const { len } = mlutil.formatDate(
       +new Date(this.data.yearMonth + '-01 00:00:00')
     );
-    const yearMonth = mlUtils
+    const yearMonth = mlutil
       .formatDate(
         +new Date(this.data.yearMonth + '-' + len + ' 00:00:00') +
           24 * 3600 * 1000

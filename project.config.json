@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxc1b585f336ee118b",
@@ -67,6 +67,13 @@
 					"id": -1,
 					"name": "自定义导航",
 					"pathName": "pages/mlui/navigation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "侧边窗口",
+					"pathName": "pages/mlui/drawer/index",
 					"scene": null
 				}
 			]

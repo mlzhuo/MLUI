@@ -1,5 +1,4 @@
 {
-  "navigationStyle": "custom",
   "usingComponents": {
     "ml-calendar": "../../../components/ml-calendar/ml-calendar"
   }

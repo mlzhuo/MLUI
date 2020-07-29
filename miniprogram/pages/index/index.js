@@ -1,6 +1,7 @@
 //index.js
 const app = getApp();
-
+import MLUTIL from '../../utils/mlUtil';
+const mlutil = new MLUTIL();
 Page({
   data: {},
 
@@ -42,7 +43,6 @@ Page({
   },
 
   jump(e) {
-    const { url } = e.currentTarget.dataset;
-    wx.navigateTo({ url });
+    mlutil.navTo(e);
   }
 });

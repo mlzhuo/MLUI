@@ -23,6 +23,11 @@ class MLUIUTIL {
     const dateObj = { y, M, d, h, m, s, w, datestr, len };
     return dateObj;
   }
+
+  navTo(e) {
+    const { url } = e.currentTarget.dataset;
+    wx.navigateTo({ url });
+  }
 }
 
 export default MLUIUTIL;

@@ -1,5 +1,4 @@
 {
-  "navigationStyle": "custom",
   "usingComponents": {
     "ml-card": "../../../components/ml-card/ml-card"
   }

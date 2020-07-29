@@ -49,28 +49,28 @@ Component({
       const { statusBarHeight } = res;
       let _customBarHeight;
       if (res.platform == 'android') {
-        _customBarHeight = statusBarHeight + 50;
+        _customBarHeight = statusBarHeight + 48;
       } else {
-        _customBarHeight = statusBarHeight + 45;
+        _customBarHeight = statusBarHeight + 44;
       }
       this.setData({
         _page,
         _statusBarHeight: statusBarHeight,
         _customBarHeight,
-        _customBarStyle: `height:${_customBarHeight * 2}rpx;padding-top: ${
-          statusBarHeight * 2
-        }rpx;background-color:${bgColor};color:${color}`,
-        _customBarInnerStyle: `top:${top * 2}rpx;height:${
-          height * 2
-        }rpx;line-height:${height * 2}rpx`,
-        _iconViewStyle: `width:${width * 2}rpx;height:${
-          height * 2
-        }rpx;line-height:${height * 2}rpx;top:${
-          top * 2
-        }rpx;left: 20rpx;border-radius:${height}rpx`,
-        _iconStyle: `width:${height * 2}rpx;height:${
-          height * 2
-        }rpx;color:${color}`
+        _customBarStyle: `height:${_customBarHeight}px;padding-top: ${
+          statusBarHeight
+        }px;background-color:${bgColor};color:${color}`,
+        _customBarInnerStyle: `top:${top}px;height:${
+          height
+        }px;line-height:${height}px`,
+        _iconViewStyle: `width:${width}px;height:${
+          height
+        }px;line-height:${height}px;top:${
+          top
+        }px;left: 20rpx;border-radius:${height}px`,
+        _iconStyle: `width:${height}px;height:${
+          height
+        }px;color:${color}`
       });
       if (bgColor.indexOf('#fff') === -1) {
         wx.setNavigationBarColor({

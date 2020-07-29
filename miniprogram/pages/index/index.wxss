@@ -7,17 +7,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #fff;
 }
 .ml-gird .ml-gird-item {
-  width: 33%;
+  width: 33.3333333%;
   height: 160rpx;
   line-height: 160rpx;
   box-sizing: border-box;
   text-align: center;
-}
-.ml-gird-item-center {
-  border-left: 1rpx solid #efefef;
   border-right: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
 }

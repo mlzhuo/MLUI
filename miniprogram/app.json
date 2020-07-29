@@ -5,7 +5,8 @@
     "pages/introduction/index",
     "pages/mlui/calendar/index",
     "pages/mlui/navigation/index",
-    "pages/mlui/card/index"
+    "pages/mlui/card/index",
+    "pages/mlui/drawer/index"
   ],
   "usingComponents": {
     "ml-navigation": "components/ml-navigation/ml-navigation",
@@ -16,7 +17,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "MLUI 组件库",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
