@@ -1,13 +1,13 @@
 <!-- components/ml-drawer/ml-drawer.wxml -->
 <!-- 左侧 -->
-<view class="ml-drawer left {{open&&position==='left'?'open':''}}" style="height:{{_height}}px;background-color:{{bgColor}};{{isCustomNav?'top:'+_top+'px;':'0'}}" bindtap="_closeDrawer">
-  <view class="ml-drawer-content" style="width:{{width}}" catchtap>
+<view class="ml-drawer fixed left {{open&&position==='left'?'open':''}}" style="height:{{_height}}px;background-color:{{bgColor}};{{isCustomNav?'top:'+_top+'px;':'0'}}" bindtap="_closeDrawer">
+  <view class="ml-drawer-content bg-white" style="width:{{width}}" catchtap>
     <slot wx:if="{{position==='left'}}"></slot>
   </view>
 </view>
 <!-- 右侧 -->
-<view class="ml-drawer right {{open&&position==='right'?'open':''}}" style="height:{{_height}}px;background-color:{{bgColor}};{{isCustomNav?'top:'+_top+'px;':'0'}}" bindtap="_closeDrawer">
-  <view class="ml-drawer-content" style="width:{{width}}" catchtap>
+<view class="ml-drawer fixed right {{open&&position==='right'?'open':''}}" style="height:{{_height}}px;background-color:{{bgColor}};{{isCustomNav?'top:'+_top+'px;':'0'}}" bindtap="_closeDrawer">
+  <view class="ml-drawer-content bg-white" style="width:{{width}}" catchtap>
     <slot wx:if="{{position==='right'}}"></slot>
   </view>
 </view>

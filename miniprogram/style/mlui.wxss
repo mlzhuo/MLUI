@@ -58,6 +58,37 @@ button::after {
 .white {
   color: #ffffff;
 }
+/* font */
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.font-12 {
+  font-size: 24rpx;
+}
+.font-14 {
+  font-size: 28rpx;
+}
+.font-16 {
+  font-size: 32rpx;
+}
+.font-18 {
+  font-size: 36rpx;
+}
+.font-20 {
+  font-size: 40rpx;
+}
 /* background */
 .bg-black {
   background-color: #353535;
@@ -86,6 +117,9 @@ button::after {
 }
 .border {
   border: 2rpx solid #f0f0f0;
+}
+.no-border {
+  border: none;
 }
 .border-black {
   border-color: #353535;
@@ -133,4 +167,14 @@ button::after {
 .scroll-x {
   overflow-y: hidden;
   overflow-x: auto;
+}
+/* position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
 }

@@ -1,58 +1,187 @@
 /* components/calendar/index.wxss */
+/**mlui.wxss**/
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_529957_e5dwkxb7fna.eot?t=1595759434011');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_529957_e5dwkxb7fna.eot?t=1595759434011#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'), url('//at.alicdn.com/t/font_529957_e5dwkxb7fna.woff?t=1595759434011') format('woff'), url('//at.alicdn.com/t/font_529957_e5dwkxb7fna.ttf?t=1595759434011') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_529957_e5dwkxb7fna.svg?t=1595759434011#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-home_light:before {
+  content: '\e7d4';
+}
+.icon-move:before {
+  content: '\e768';
+}
+.icon-back_light:before {
+  content: '\e7e0';
+}
+page {
+  background: #f6f6f6;
+  font-size: 32rpx;
+  color: #353535;
+}
+button {
+  background: initial;
+}
+button:focus {
+  outline: 0;
+}
+button::after {
+  border: none;
+}
+/* color */
+.black {
+  color: #353535;
+}
+.blue {
+  color: #69cdff;
+}
+.green {
+  color: #4bd197;
+}
+.red {
+  color: #ff5c5c;
+}
+.orange {
+  color: #ffcb47;
+}
+.purple {
+  color: #ff8ccb;
+}
+.white {
+  color: #ffffff;
+}
+/* font */
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+/* background */
+.bg-black {
+  background-color: #353535;
+}
+.bg-blue {
+  background-color: #69cdff;
+}
+.bg-green {
+  background-color: #4bd197;
+}
+.bg-red {
+  background-color: #ff5c5c;
+}
+.bg-orange {
+  background-color: #ffcb47;
+}
+.bg-purple {
+  background-color: #ff8ccb;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+/* border */
+.radius {
+  border-radius: 8rpx;
+}
+.border {
+  border: 2rpx solid #f0f0f0;
+}
+.no-border {
+  border: none;
+}
+.border-black {
+  border-color: #353535;
+}
+.border-blue {
+  border-color: #69cdff;
+}
+.border-green {
+  border-color: #4bd197;
+}
+.border-red {
+  border-color: #ff5c5c;
+}
+.border-orange {
+  border-color: #ffcb47;
+}
+.border-purple {
+  border-color: #ff8ccb;
+}
+.border-white {
+  border-color: #ffffff;
+}
+.round {
+  border-radius: 50%;
+}
+/* flex */
+.flex {
+  display: flex;
+}
+.flex.colomn {
+  flex-direction: column;
+}
+.flex.center {
+  align-items: center;
+}
+.flex.end {
+  align-items: flex-end;
+}
+.flex.around {
+  justify-content: space-around;
+}
+.flex.between {
+  justify-content: space-between;
+}
+.scroll-x {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+/* position */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 .ml-calendar {
   min-height: 370rpx;
   padding: 24rpx;
-  background: #fff;
-  color: #353535;
 }
-.ml-calendar .week {
-  display: flex;
-  justify-content: space-around;
-}
-.ml-calendar .week .week-item {
+.ml-calendar .week-item {
   height: 50rpx;
   line-height: 50rpx;
   width: 80rpx;
-  font-weight: bold;
-  text-align: center;
 }
-.ml-calendar .bg-blue {
-  background-color: #69cdff;
-}
-.ml-calendar .bg-white {
-  background-color: #fff;
-}
-.ml-calendar .day .day-line {
-  display: flex;
-  justify-content: space-around;
-}
-.ml-calendar .day .day-line .day-item {
+.ml-calendar .day-item {
   height: 80rpx;
   line-height: 80rpx;
   width: 80rpx;
   overflow: hidden;
-  position: relative;
   margin-top: 24rpx;
-  text-align: center;
-  border-radius: 50%;
   box-sizing: border-box;
 }
-.ml-calendar .day .day-line .day-item.today {
-  color: #69cdff;
-  border: 2rpx solid #69cdff;
-}
-.ml-calendar .day .day-line .day-item.active {
-  border: none;
-  color: #fff;
-  background-color: #69cdff;
-  font-weight: bold;
-}
-.ml-calendar .day .day-line .day-item .day-flag {
-  position: absolute;
+.ml-calendar .day-item .day-flag {
   width: 8rpx;
   height: 8rpx;
   left: 50%;
   transform: translateX(-50%);
   bottom: 5rpx;
-  border-radius: 50%;
 }

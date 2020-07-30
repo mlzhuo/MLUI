@@ -1,13 +1,15 @@
 <!-- components/calendar/index.wxml -->
-<view class="ml-calendar">
-  <view class="week">
-    <view class="week-item" wx:for="{{['日','一','二','三','四','五','六']}}" wx:key="item">{{item}}</view>
+<view class="ml-calendar bg-white black">
+  <view class="week flex around">
+    <view class="week-item bold text-center" wx:for="{{['日','一','二','三','四','五','六']}}" wx:key="item">
+      {{item}}
+    </view>
   </view>
   <view class="day">
-    <view class="day-line" wx:for="{{_dayList.length}}" wx:for-index="index" wx:key="index">
-      <view class="day-item {{item._date===_today?'today':''}} {{_chooseDay===item._date?'active':''}}" data-date="{{item._date}}" wx:for="{{_dayList[index]}}" wx:key="index" bindtap="_dayTap">
+    <view class="day-line flex around" wx:for="{{_dayList.length}}" wx:for-index="index" wx:key="index">
+      <view class="day-item relative text-center round {{item._date===_today?'blue border border-blue':''}} {{_chooseDay===item._date?'no-border white bg-blue bold':''}}" data-date="{{item._date}}" wx:for="{{_dayList[index]}}" wx:key="index" bindtap="_dayTap">
         {{item._date===_today?'今':item._day}}
-        <view class="day-flag {{_chooseDay===item._date?'bg-white':'bg-blue'}}" wx:if="{{item._isShowPoint}}"></view>
+        <view class="day-flag absolute round {{_chooseDay===item._date?'bg-white':'bg-blue'}}" wx:if="{{item._isShowPoint}}"></view>
       </view>
     </view>
   </view>
