@@ -1,9 +1,7 @@
 <!-- miniprogram/pages/mlui/drawer/index.wxml -->
 <ml-navigation title="侧边窗口" bgColor="#69cdff" color="#fff"></ml-navigation>
 <ml-drawer open="{{open}}" position="{{position}}" width="{{width}}" isCustomNav="{{isCustomNav}}" bind:closeDrawer="closeDrawer">
-  <view class="drawer-content">
-    <view wx:for="{{50}}" wx:key="index">{{index}}哈哈哈哈哈哈哈哈</view>
-  </view>
+  <view class="drawer-content"></view>
 </ml-drawer>
 <view class="action-view">
   <button class="btn" type="primary" data-position="left" bindtap="onTap">左边</button>

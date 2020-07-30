@@ -2,12 +2,12 @@
 <ml-navigation title="月历" bgColor="#69cdff" color="#fff"></ml-navigation>
 <view class="picker-view">
   <view class="pre" bindtap="preMonth">前月</view>
-  <picker class="date-picker" mode="date" value="{{yearMonth}}" fields="month" bindchange="bindDateChange">
-    <view>{{tool.setDate(yearMonth)}}</view>
+  <picker class="date-picker" mode="date" fields="month" bindchange="bindDateChange">
+    <view>{{tool.setDate(date)}}</view>
   </picker>
   <view class="next" bindtap="nextMonth">下月</view>
 </view>
-<ml-calendar bind:tapDateAction="tapDateAction" yearMonth="{{yearMonth}}" dataObj="{{dataObj}}"></ml-calendar>
+<ml-calendar bind:tapDateAction="tapDateAction" selectedDate="{{date}}" dataObj="{{dataObj}}"></ml-calendar>
 <view class="result">当前选择日期：{{date}}</view>
 <wxs module="tool">
   module.exports = {
