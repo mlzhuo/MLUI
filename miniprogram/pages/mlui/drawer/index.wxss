@@ -1,6 +1,10 @@
 /* miniprogram/pages/mlui/drawer/index.wxss */
 .action-view {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100rpx;
+  margin-top: 200rpx;
+}
+
+button {
+  background: #69cdff !important;
+  color: #fff;
+  margin-top: 50rpx;
 }

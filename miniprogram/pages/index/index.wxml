@@ -1,11 +1,3 @@
 <!-- index.wxml -->
 <ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>
-<view class="container black">
-  <ml-card>
-    <view class="ml-gird">
-      <view class="radius bg-white ml-gird-item" data-url="../mlui/calendar/index" bindtap="jump">月历</view>
-      <view class="bg-white ml-gird-item" data-url="../mlui/navigation/index" bindtap="jump">导航</view>
-      <view class="radius bg-white ml-gird-item" data-url="../mlui/drawer/index" bindtap="jump">侧边窗口</view>
-    </view>
-  </ml-card>
-</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}"></ml-grid>

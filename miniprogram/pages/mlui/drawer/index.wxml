@@ -4,6 +4,6 @@
   <view class="drawer-content"></view>
 </ml-drawer>
 <view class="action-view">
-  <button class="btn" type="primary" data-position="left" bindtap="onTap">左边</button>
-  <button class="btn" type="primary" data-position="right" bindtap="onTap">右边</button>
+  <button class="btn" data-position="left" bindtap="onTap">左边</button>
+  <button class="btn" data-position="right" bindtap="onTap">右边</button>
 </view>

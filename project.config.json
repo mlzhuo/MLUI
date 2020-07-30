@@ -76,6 +76,12 @@
 					"pathName": "pages/mlui/drawer/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "宫格",
+					"pathName": "pages/mlui/gird/index",
+					"scene": null
 				}
 			]
 		}

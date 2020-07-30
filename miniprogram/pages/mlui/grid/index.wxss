@@ -1,0 +1,5 @@
+/* miniprogram/pages/mlui/gird/index.wxss */
+.title {
+  margin: 30rpx;
+  text-align: center;
+}

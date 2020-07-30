@@ -1,2 +1,0 @@
-<!-- miniprogram/pages/components/index.wxml -->
-<ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>

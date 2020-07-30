@@ -1,4 +1,4 @@
-/* components/ml-navigation/ml-navigation.wxss */
+/* components/ml-gird/ml-gird.wxss */
 /**mlui.wxss**/
 @font-face {
   font-family: "iconfont";
@@ -215,24 +215,19 @@ button::after {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.ml-navigation .navigation-view {
-  width: 100vw !important;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border-radius: 0;
-  z-index: 9999999;
+.ml-gird {
+  flex-wrap: wrap;
 }
-.ml-navigation .navigation-view.fixed-view {
-  top: 0;
-  left: 0;
+.ml-gird .gird-item {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
-.ml-navigation .navigation-view .inner {
-  left: 50%;
-  transform: translateX(-50%);
+.ml-gird .gird-item .icon-img {
+  line-height: 1;
+  flex: 7;
+  overflow: hidden;
 }
-.ml-navigation .navigation-view .icon-view .icon-move {
-  transform: rotate(90deg);
-  font-weight: lighter;
-  opacity: 0.3;
+.ml-gird .gird-item .text {
+  flex: 3;
+  line-height: 1;
 }

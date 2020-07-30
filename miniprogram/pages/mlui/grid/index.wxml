@@ -1,0 +1,16 @@
+<!-- miniprogram/pages/mlui/grid/index.wxml -->
+<ml-navigation>宫格</ml-navigation>
+<view class="title">图片</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListImg}}" is-only-title="{{false}}" is-no-title="{{false}}" img="{{true}}" height="{{75}}"></ml-grid>
+<view class="title">只显示title</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListImg}}" only-title="{{true}}" no-title="{{false}}" img="{{true}}" height="{{75}}"></ml-grid>
+<view class="title">只显示图片</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListImg}}" only-title="{{false}}" no-title="{{true}}" img="{{true}}" height="{{75}}"></ml-grid>
+<view class="title">Iconfont</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}" only-title="{{false}}" no-title="{{false}}" img="{{false}}" height="{{75}}"></ml-grid>
+<view class="title">只显示Iconfont</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}" only-title="{{false}}" no-title="{{true}}" img="{{false}}" height="{{75}}"></ml-grid>
+<view class="title">4列</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}" columnNum="{{4}}" only-title="{{false}}" no-title="{{false}}" img="{{false}}" height="{{75}}"></ml-grid>
+<view class="title">5列</view>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}" columnNum="{{5}}" only-title="{{false}}" no-title="{{false}}" img="{{false}}" height="{{75}}"></ml-grid>
