@@ -1,0 +1,128 @@
+/**mlui.wxss**/
+@import './iconfont.wxss';
+
+@black: #353535;
+@blue: #69cdff;
+@green: #4bd197;
+@red: #ff5c5c;
+@orange: #ffcb47;
+@purple: #ff8ccb;
+@white: #ffffff;
+@gray: #f0f0f0;
+
+page {
+	background: #f6f6f6;
+	font-size: 32rpx;
+	color: #353535;
+}
+button {
+	background: initial;
+}
+button:focus {
+	outline: 0;
+}
+button::after {
+	border: none;
+}
+/* color */
+.black {
+	color: @black;
+}
+.blue {
+	color: @blue;
+}
+.green {
+	color: @green;
+}
+.red {
+	color: @red;
+}
+.orange {
+	color: @orange;
+}
+.purple {
+	color: @purple;
+}
+.white {
+	color: @white;
+}
+
+/* background */
+.bg-black {
+	background-color: @black;
+}
+.bg-blue {
+	background-color: @blue;
+}
+.bg-green {
+	background-color: @green;
+}
+.bg-red {
+	background-color: @red;
+}
+.bg-orange {
+	background-color: @orange;
+}
+.bg-purple {
+	background-color: @purple;
+}
+.bg-white {
+	background-color: @white;
+}
+
+/* border */
+.radius {
+	border-radius: 8rpx;
+}
+.border {
+	border: 2rpx solid @gray;
+}
+.border-black {
+	border-color: @black;
+}
+.border-blue {
+	border-color: @blue;
+}
+.border-green {
+	border-color: @green;
+}
+.border-red {
+	border-color: @red;
+}
+.border-orange {
+	border-color: @orange;
+}
+.border-purple {
+	border-color: @purple;
+}
+.border-white {
+	border-color: @white;
+}
+.round {
+	border-radius: 50%;
+}
+
+/* flex */
+.flex {
+	display: flex;
+	&.colomn {
+		flex-direction: column;
+	}
+	&.center {
+		align-items: center;
+	}
+	&.end {
+		align-items: flex-end;
+	}
+	&.around {
+		justify-content: space-around;
+	}
+	&.between {
+		justify-content: space-between;
+	}
+}
+
+.scroll-x {
+	overflow-y: hidden;
+	overflow-x: auto;
+}

@@ -2,7 +2,9 @@
 <view class="ml-navigation">
   <button class="navigation-view" style="{{_customBarStyle}}"></button>
   <button class="navigation-view fixed-view" style="{{_customBarStyle}}">
-    <view class="inner" style="{{_customBarInnerStyle}}">{{title}}</view>
+    <view class="inner" style="{{_customBarInnerStyle}}">
+      <slot></slot>
+    </view>
     <view class="icon-view" style="{{_iconViewStyle}}">
       <view wx:if="{{isShowBack && _page.length > 1}}" class="iconfont icon-back_light" style="{{_iconStyle}}" bindtap="back"></view>
       <view wx:if="{{isShowBack&&isShowHome&&_page.length > 1}}" class="iconfont icon-move" style="color:{{color}}"></view>

@@ -1,2 +1,2 @@
 <!-- miniprogram/pages/components/index.wxml -->
-<ml-navigation isShowHome="{{false}}" title="MLUI 组件库" bgColor="#69cdff" color="#fff"></ml-navigation>
+<ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>

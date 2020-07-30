@@ -1,21 +1,18 @@
 /**index.wxss**/
 .container {
-  padding: 24rpx;
+	padding: 24rpx;
 }
 .ml-gird {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  background: #fff;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
 }
 .ml-gird .ml-gird-item {
-  width: 33.3333333%;
-  height: 160rpx;
-  line-height: 160rpx;
-  box-sizing: border-box;
-  text-align: center;
-  border-right: 1rpx solid #efefef;
-  border-bottom: 1rpx solid #efefef;
+	width: 33.3333333%;
+	height: 160rpx;
+	line-height: 160rpx;
+	box-sizing: border-box;
+	text-align: center;
 }

@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/calendar/index.wxml -->
-<ml-navigation title="月历" bgColor="#69cdff" color="#fff"></ml-navigation>
+<ml-navigation>月历</ml-navigation>
 <view class="picker-view">
   <view class="pre" bindtap="preMonth">前月</view>
   <picker class="date-picker" mode="date" fields="month" bindchange="bindDateChange">

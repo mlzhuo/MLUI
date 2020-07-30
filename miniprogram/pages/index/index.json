@@ -1,7 +1,1 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "ml-navigation": "../../components/ml-navigation/ml-navigation",
-    "ml-card": "../../components/ml-card/ml-card"
-  }
-}
+{}

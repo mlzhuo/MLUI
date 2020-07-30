@@ -1,5 +1,0 @@
-/* components/ml-card/ml-card.wxss */
-.ml-card {
-  border-radius: 8rpx;
-  overflow: hidden;
-}

@@ -6,11 +6,11 @@ Component({
   properties: {
     bgColor: {
       type: String,
-      value: '#ffffff'
+      value: '#69cdff'
     },
     color: {
       type: String,
-      value: '#353535'
+      value: '#fff'
     },
     title: {
       type: String,
