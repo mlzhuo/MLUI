@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"ml-banner": "../../../components/ml-banner/ml-banner"
+	}
+}

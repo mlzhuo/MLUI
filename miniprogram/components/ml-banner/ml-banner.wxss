@@ -1,3 +1,4 @@
+/* components/ml-banner/ml-banner.wxss */
 /**mlui.wxss**/
 @font-face {
   font-family: "iconfont";
@@ -225,4 +226,57 @@ button::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.ml-banner.full-screen .inner {
+  transition: left 0.3s ease;
+}
+.ml-banner.full-screen .inner .banner-item {
+  height: 100%;
+  display: inline-block;
+}
+.ml-banner.full-screen .inner .banner-item image {
+  height: 100%;
+}
+.ml-banner.full-screen .point {
+  bottom: 5%;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+.ml-banner.full-screen .point .point-item {
+  height: 10rpx;
+  width: 10rpx;
+  margin: 0 10rpx;
+  border-radius: 5rpx;
+  transition: width 0.3s ease;
+}
+.ml-banner.full-screen .point .point-item.active {
+  width: 40rpx;
+}
+.ml-banner.type2 {
+  margin-top: 100rpx;
+}
+.ml-banner.type2 .banner-item {
+  height: 100%;
+  display: inline-block;
+}
+.ml-banner.type2 .banner-item:nth-child(1) {
+  margin-left: 75rpx;
+}
+.ml-banner.type2 .banner-item image {
+  height: 100%;
+}
+.ml-banner.type2 .point {
+  bottom: 5%;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+.ml-banner.type2 .point .point-item {
+  height: 10rpx;
+  width: 10rpx;
+  margin: 0 10rpx;
+  border-radius: 5rpx;
+  transition: width 0.3s ease;
+}
+.ml-banner.type2 .point .point-item.active {
+  width: 40rpx;
 }

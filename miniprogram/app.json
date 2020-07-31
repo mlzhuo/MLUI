@@ -5,7 +5,8 @@
     "pages/mlui/calendar/index",
     "pages/mlui/navigation/index",
     "pages/mlui/drawer/index",
-    "pages/mlui/grid/index"
+    "pages/mlui/grid/index",
+    "pages/mlui/banner/index"
   ],
   "usingComponents": {
     "ml-navigation": "components/ml-navigation/ml-navigation"

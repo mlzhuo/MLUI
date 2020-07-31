@@ -1,7 +1,5 @@
 //index.js
 const app = getApp();
-import MLUTIL from '../../utils/mlUtil';
-const mlutil = new MLUTIL();
 Page({
   data: {
     girdItemListIcon: [
@@ -28,6 +26,12 @@ Page({
         value: 'iconfont icon-gongge1',
         color: '#69cdff',
         url: '../mlui/grid/index'
+      },
+      {
+        title: 'banner',
+        value: 'iconfont icon-gongge1',
+        color: '#69cdff',
+        url: '../mlui/banner/index'
       }
     ]
   },
