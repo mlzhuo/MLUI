@@ -1,1 +1,5 @@
 /* miniprogram/pages/mlui/banner/index.wxss */
+.split {
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}

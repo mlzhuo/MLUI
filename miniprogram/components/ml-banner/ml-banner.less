@@ -1,59 +1,49 @@
 /* components/ml-banner/ml-banner.wxss */
 @import '../../style/mlui.less';
 
-.ml-banner.full-screen {
-	.inner {
-		transition: left 0.3s ease;
-		.banner-item {
-			height: 100%;
-			display: inline-block;
-			image {
-				height: 100%;
-			}
-		}
-	}
-	.point {
-		bottom: 5%;
-		left: 50vw;
-		transform: translateX(-50%);
-		.point-item {
-			height: 10rpx;
-			width: 10rpx;
-			margin: 0 10rpx;
-			border-radius: 5rpx;
-			transition: width 0.3s ease;
-			&.active {
-				width: 40rpx;
-			}
-		}
-	}
-}
-
-.ml-banner.type2 {
-	margin-top: 100rpx;
-	.banner-item {
-		height: 100%;
-		display: inline-block;
-		&:nth-child(1) {
-			margin-left: 75rpx;
-		}
-		image {
-			height: 100%;
-		}
-	}
-	.point {
-		bottom: 5%;
-		left: 50vw;
-		transform: translateX(-50%);
-		.point-item {
-			height: 10rpx;
-			width: 10rpx;
-			margin: 0 10rpx;
-			border-radius: 5rpx;
-			transition: width 0.3s ease;
-			&.active {
-				width: 40rpx;
-			}
-		}
-	}
+.ml-banner {
+  .inner {
+    transition: left 0.3s ease;
+  }
+  &.full-screen .inner {
+    .banner-item {
+      height: 100%;
+      display: inline-block;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &.type2 .inner {
+    .banner-item {
+      display: inline-block;
+      margin-left: 15rpx;
+      margin-right: 15rpx;
+      &:nth-child(1) {
+        margin-left: 100rpx;
+      }
+      &:last-child {
+        margin-right: 100rpx;
+      }
+      image {
+        max-width: 100%;
+      }
+    }
+  }
+  .point {
+    bottom: 5%;
+    left: 50vw;
+    transform: translateX(-50%);
+    .point-item {
+      height: 10rpx;
+      width: 10rpx;
+      margin: 0 10rpx;
+      border-radius: 5rpx;
+      transition: width 0.3s ease;
+      &.active {
+        width: 40rpx;
+      }
+    }
+  }
 }

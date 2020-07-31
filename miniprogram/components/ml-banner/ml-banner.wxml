@@ -1,19 +1,22 @@
 <!-- components/ml-banner/ml-banner.wxml -->
-<view class="ml-banner full-screen bg-white relative" style="width:{{_fullScreenWidth*2}}rpx;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+<view wx:if="{{type==='default'}}" class="ml-banner full-screen bg-white relative" style="width:{{_fullScreenWidth*2}}rpx;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
   <view class="inner absolute" style="width:{{_fullScreenWidth*2}}rpx;height:{{height*2}}rpx;left:{{_fullScreenLeft*2}}rpx;{{_isMoving?'transition:none':''}}">
     <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:{{_fullScreenItemWidth*2}}rpx">
-      <image class="absolute position-center" mode="aspectFit" src="{{item.url}}" />
+      <image class="absolute position-center" mode="aspectFill" src="{{item.url}}" />
+    </view>
+  </view>
+  <view class="point absolute flex around" wx:if="{{isDot}}">
+    <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
+  </view>
+</view>
+<!-- 带侧边栏 -->
+<view wx:if="{{type==='side'}}" class="ml-banner type2 bg-white relative flex center" style="width:{{_sideTypeWidth*2}}rpx;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <view class="inner absolute" style="width:{{_sideTypeWidth*2}}rpx;height:{{height*2}}rpx;left:{{_sideTypeScreenLeft*2}}rpx;{{_isMoving?'transition:none':''}}">
+    <view class="banner-item relative" style="width:{{_sideTypeItemWidth*2}}rpx;height:{{height*2}}rpx;" wx:for="{{list}}" wx:key="index">
+      <image class="absolute position-center radius" mode="aspectFill" style="height:{{_current==index?height*1.7:height*1.5}}rpx;" src="{{item.url}}" />
     </view>
   </view>
   <view class="point absolute flex around">
-    <view class="point-item bg-blue {{_current==index?'active':''}}" wx:for="{{list}}" wx:key="index"></view>
+    <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
   </view>
 </view>
-<!-- <view class="ml-banner type2 bg-white relative" style="width:{{_sideTypeWidth*2}}rpx;height:{{height*2}}rpx;">
-  <view class="banner-item relative" style="width:{{_sideTypeItemWidth*2}}rpx" wx:for="{{list}}" wx:key="index">
-    <image class="absolute position-center" mode="aspectFit" src="{{item.url}}" />
-  </view>
-  <view class="point absolute flex around">
-    <view class="point-item bg-blue {{_current==index?'active':''}}" wx:for="{{list}}" wx:key="index"></view>
-  </view>
-</view> -->

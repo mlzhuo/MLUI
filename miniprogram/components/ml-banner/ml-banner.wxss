@@ -227,7 +227,7 @@ button::after {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.ml-banner.full-screen .inner {
+.ml-banner .inner {
   transition: left 0.3s ease;
 }
 .ml-banner.full-screen .inner .banner-item {
@@ -235,48 +235,35 @@ button::after {
   display: inline-block;
 }
 .ml-banner.full-screen .inner .banner-item image {
+  width: 100%;
   height: 100%;
 }
-.ml-banner.full-screen .point {
-  bottom: 5%;
-  left: 50vw;
-  transform: translateX(-50%);
-}
-.ml-banner.full-screen .point .point-item {
-  height: 10rpx;
-  width: 10rpx;
-  margin: 0 10rpx;
-  border-radius: 5rpx;
-  transition: width 0.3s ease;
-}
-.ml-banner.full-screen .point .point-item.active {
-  width: 40rpx;
-}
-.ml-banner.type2 {
-  margin-top: 100rpx;
-}
-.ml-banner.type2 .banner-item {
-  height: 100%;
+.ml-banner.type2 .inner .banner-item {
   display: inline-block;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
 }
-.ml-banner.type2 .banner-item:nth-child(1) {
-  margin-left: 75rpx;
+.ml-banner.type2 .inner .banner-item:nth-child(1) {
+  margin-left: 100rpx;
 }
-.ml-banner.type2 .banner-item image {
-  height: 100%;
+.ml-banner.type2 .inner .banner-item:last-child {
+  margin-right: 100rpx;
 }
-.ml-banner.type2 .point {
+.ml-banner.type2 .inner .banner-item image {
+  max-width: 100%;
+}
+.ml-banner .point {
   bottom: 5%;
   left: 50vw;
   transform: translateX(-50%);
 }
-.ml-banner.type2 .point .point-item {
+.ml-banner .point .point-item {
   height: 10rpx;
   width: 10rpx;
   margin: 0 10rpx;
   border-radius: 5rpx;
   transition: width 0.3s ease;
 }
-.ml-banner.type2 .point .point-item.active {
+.ml-banner .point .point-item.active {
   width: 40rpx;
 }
