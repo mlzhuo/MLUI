@@ -11,7 +11,7 @@ Page({
       { type: 'image', url: '/images/banner3.png' },
       { type: 'image', url: '/images/banner4.png' },
       { type: 'image', url: '/images/banner5.png' },
-      { type: 'image', url: '/images/banner3.png' }
+      { type: 'image', url: '/images/banner6.png' }
     ]
   },
 
