@@ -7,7 +7,7 @@ Page({
 	 */
 	data: {
 		date: '',
-		dataObj: [
+		pointDayList: [
 			'2020-07-03',
 			'2020-07-07',
 			'2020-07-12',

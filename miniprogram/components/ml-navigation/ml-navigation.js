@@ -1,4 +1,6 @@
 // components/ml-navigation/ml-navigation.js
+let _customBarHeight = 65;
+let _statusBarHeight = 20;
 Component({
   /**
    * 组件的属性列表
@@ -30,8 +32,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    _customBarHeight: 65,
-    _statusBarHeight: 20,
+    // _customBarHeight: 65,
+    // _statusBarHeight: 20,
     _customBarStyle: '',
     _customBarInnerStyle: '',
     _iconViewStyle: '',
@@ -41,36 +43,24 @@ Component({
 
   lifetimes: {
     attached() {
-      const _page = getCurrentPages()
+      const _page = getCurrentPages();
       const { bgColor, color } = this.data;
       const menuRes = wx.getMenuButtonBoundingClientRect();
       const { height, top, width } = menuRes;
       const res = wx.getSystemInfoSync();
       const { statusBarHeight } = res;
-      let _customBarHeight;
       if (res.platform == 'android') {
         _customBarHeight = statusBarHeight + 48;
       } else {
         _customBarHeight = statusBarHeight + 44;
       }
+      _statusBarHeight = statusBarHeight;
       this.setData({
         _page,
-        _statusBarHeight: statusBarHeight,
-        _customBarHeight,
-        _customBarStyle: `height:${_customBarHeight}px;padding-top: ${
-          statusBarHeight
-        }px;background-color:${bgColor};color:${color}`,
-        _customBarInnerStyle: `top:${top}px;height:${
-          height
-        }px;line-height:${height}px`,
-        _iconViewStyle: `width:${width}px;height:${
-          height
-        }px;line-height:${height}px;top:${
-          top
-        }px;left: 20rpx;border-radius:${height}px`,
-        _iconStyle: `width:${height}px;height:${
-          height
-        }px;color:${color}`
+        _customBarStyle: `height:${_customBarHeight}px;padding-top: ${statusBarHeight}px;background-color:${bgColor};color:${color}`,
+        _customBarInnerStyle: `top:${top}px;height:${height}px;line-height:${height}px`,
+        _iconViewStyle: `width:${width}px;height:${height}px;line-height:${height}px;top:${top}px;left: 20rpx;border-radius:${height}px`,
+        _iconStyle: `width:${height}px;height:${height}px;color:${color}`
       });
       if (bgColor.indexOf('#fff') === -1) {
         wx.setNavigationBarColor({

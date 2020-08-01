@@ -1,6 +1,7 @@
 // components/calendar/index.js
 import MLUIUTIL from '../../utils/mlUtil';
 const mlutil = new MLUIUTIL();
+let _pointDayList = []; //显示点的日期集合
 Component({
   /**
    * 组件的属性列表
@@ -10,7 +11,7 @@ Component({
       type: String,
       value: mlutil.formatDate(new Date()).datestr
     },
-    dataObj: {
+    pointDayList: {
       type: Array,
       value: []
     }
@@ -28,10 +29,9 @@ Component({
         }
       );
     },
-    dataObj(newVal) {
-      this.setData({ _dataObj: newVal }, () => {
-        this.setMonthDay();
-      });
+    pointDayList(newVal) {
+      _pointDayList = newVal;
+      this.setMonthDay();
     }
   },
 
@@ -40,7 +40,6 @@ Component({
    */
   data: {
     _today: '', // 2020-07-26
-    _dataObj: [],
     _dayList: [],
     _chooseDay: '' // 2020-07-26
   },
@@ -51,7 +50,7 @@ Component({
   methods: {
     setMonthDay() {
       const defaultTime = ' 00:00:00';
-      const { selectedDate, _dataObj } = this.data;
+      const { selectedDate } = this.data;
       const { w, datestr, len } = mlutil.formatDate(
         selectedDate.slice(0, 7) + '-01' + defaultTime
       );
@@ -67,7 +66,8 @@ Component({
         _dayList.push({
           _date: _dayItem.datestr,
           _day: _dayItem.d,
-          _isShowPoint: _dataObj.findIndex(v => v == _dayItem.datestr) !== -1
+          _isShowPoint:
+            _pointDayList.findIndex(v => v == _dayItem.datestr) !== -1
         });
       }
       const _last = _dayList.length % 7 === 0 ? 0 : 7 - (_dayList.length % 7);

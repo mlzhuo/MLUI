@@ -57,7 +57,6 @@ Component({
    */
   methods: {
     _closeDrawer() {
-      this.setData({ _position: '' });
       this.triggerEvent('closeDrawer', false);
     }
   }

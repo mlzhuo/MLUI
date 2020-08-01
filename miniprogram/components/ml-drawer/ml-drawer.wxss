@@ -120,6 +120,18 @@ button::after {
 .font-20 {
   font-size: 40rpx;
 }
+/* 文字溢出处理 2行 + ... */
+.one-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.two-lines-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 /* background */
 .bg-black {
   background-color: #353535;
@@ -231,6 +243,7 @@ button::after {
   overflow-y: auto;
   z-index: 1000;
   transition-duration: 0.3s;
+  -webkit-overflow-scrolling: touch;
 }
 .ml-drawer.open {
   opacity: 1;

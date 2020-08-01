@@ -7,7 +7,7 @@
   </picker>
   <view class="next" bindtap="nextMonth">下月</view>
 </view>
-<ml-calendar bind:tapDateAction="tapDateAction" selectedDate="{{date}}" dataObj="{{dataObj}}"></ml-calendar>
+<ml-calendar bind:tapDateAction="tapDateAction" selectedDate="{{date}}" pointDayList="{{pointDayList}}"></ml-calendar>
 <view class="result">当前选择日期：{{date}}</view>
 <wxs module="tool">
   module.exports = {
