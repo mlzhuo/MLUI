@@ -6,6 +6,7 @@ Page({
   data: {
     current: 0,
     list: [
+      { type: 'video', url: 'cloud://ml-ui-mrr.6d6c-ml-ui-mrr-1302725761/demo.mp4' },
       { type: 'image', url: '/images/banner1.png' },
       { type: 'image', url: '/images/banner2.png' },
       { type: 'image', url: '/images/banner3.png' },

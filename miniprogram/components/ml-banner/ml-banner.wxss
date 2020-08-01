@@ -230,27 +230,17 @@ button::after {
 .ml-banner .inner {
   transition: left 0.3s ease;
 }
-.ml-banner.full-screen .inner .banner-item {
+.ml-banner .inner .banner-item {
   height: 100%;
   display: inline-block;
 }
-.ml-banner.full-screen .inner .banner-item image {
+.ml-banner .inner .banner-item image {
   width: 100%;
   height: 100%;
 }
-.ml-banner.type2 .inner .banner-item {
-  display: inline-block;
-  margin-left: 15rpx;
-  margin-right: 15rpx;
-}
-.ml-banner.type2 .inner .banner-item:nth-child(1) {
-  margin-left: 100rpx;
-}
-.ml-banner.type2 .inner .banner-item:last-child {
-  margin-right: 100rpx;
-}
-.ml-banner.type2 .inner .banner-item image {
-  max-width: 100%;
+.ml-banner .inner .banner-item video {
+  width: 100%;
+  height: 100%;
 }
 .ml-banner .point {
   bottom: 5%;

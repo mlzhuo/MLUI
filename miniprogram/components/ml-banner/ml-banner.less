@@ -4,8 +4,6 @@
 .ml-banner {
   .inner {
     transition: left 0.3s ease;
-  }
-  &.full-screen .inner {
     .banner-item {
       height: 100%;
       display: inline-block;
@@ -13,21 +11,9 @@
         width: 100%;
         height: 100%;
       }
-    }
-  }
-  &.type2 .inner {
-    .banner-item {
-      display: inline-block;
-      margin-left: 15rpx;
-      margin-right: 15rpx;
-      &:nth-child(1) {
-        margin-left: 100rpx;
-      }
-      &:last-child {
-        margin-right: 100rpx;
-      }
-      image {
-        max-width: 100%;
+      video {
+        width: 100%;
+        height: 100%;
       }
     }
   }

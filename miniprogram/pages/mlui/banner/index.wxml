@@ -1,5 +1,3 @@
 <!-- miniprogram/pages/mlui/banner/index.wxml -->
 <ml-navigation>轮播图</ml-navigation>
-<ml-banner auto-play="{{false}}" list="{{list}}"></ml-banner>
-<view class="split"></view>
-<ml-banner type="side" auto-play="{{false}}" list="{{list}}" height="{{150}}"></ml-banner>
+<ml-banner list="{{list}}"></ml-banner>
