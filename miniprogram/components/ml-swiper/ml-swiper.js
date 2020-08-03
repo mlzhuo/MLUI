@@ -1,5 +1,5 @@
 // components/ml-banner/ml-banner.js
-let timer = null;
+let _timer = null;
 let _startX = 0; //划动开始点  用于计算划动距离
 let _pageX = 0; //滑动过程中记录X坐标，用于判断左划 or 右划
 let _goLeft = true; // 左划
@@ -56,7 +56,7 @@ Component({
 			}
 		},
 		detached() {
-			clearInterval(timer);
+			clearInterval(_timer);
 		}
 	},
 
@@ -65,7 +65,7 @@ Component({
 	 */
 	methods: {
 		touchStart(e) {
-			clearInterval(timer);
+			clearInterval(_timer);
 			const { pageX } = e.touches[0];
 			_pageX = pageX;
 			_startX = pageX;
@@ -107,10 +107,10 @@ Component({
 		},
 		play() {
 			const that = this;
-			if (timer) {
-				clearInterval(timer);
+			if (_timer) {
+				clearInterval(_timer);
 			}
-			timer = setInterval(() => {
+			_timer = setInterval(() => {
 				const { _current, list } = that.data;
 				if (_current == list.length - 1) {
 					that.setData({

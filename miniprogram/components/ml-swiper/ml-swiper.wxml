@@ -1,5 +1,5 @@
 <!-- components/ml-banner/ml-banner.wxml -->
-<view wx:if="{{!showPreNext}}" class="ml-banner relative" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+<view wx:if="{{!showPreNext}}" class="ml-banner relative" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' catchtouchmove='touchMove' bindtouchend='touchEnd'>
   <view class="inner absolute" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;left:{{_fullScreenLeft}};">
     <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:100vw">
       <image wx:if="{{item.type=='image'}}" class="absolute position-center" mode="aspectFill" src="{{item.url}}" />
@@ -11,7 +11,7 @@
   </view>
 </view>
 <!-- 显示前后图片部分 -->
-<view wx:if="{{showPreNext}}" class="ml-banner relative with-pre-next" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+<view wx:if="{{showPreNext}}" class="ml-banner relative with-pre-next" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' catchtouchmove='touchMove' bindtouchend='touchEnd'>
   <view class="inner absolute" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;left:{{_widthSideLeft}};">
     <view class="placeholder"></view>
     <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:80vw">

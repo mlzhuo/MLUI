@@ -86,8 +86,15 @@
 				},
 				{
 					"id": 4,
-					"name": "pages/mlui/swiper/index",
+					"name": "轮播图",
 					"pathName": "pages/mlui/swiper/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "悬浮按钮",
+					"pathName": "pages/mlui/draggable_button/index",
 					"query": "",
 					"scene": null
 				}

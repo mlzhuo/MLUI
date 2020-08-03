@@ -1,0 +1,18 @@
+/* components/ml-draggable-button/ml-draggable-buttons.wxss */
+@import '../../style/mlui.less';
+.ml-draggable-button {
+	transition: all 0.3s ease;
+	overflow: hidden;
+	padding: 0;
+  position: fixed;
+  z-index: 9999;
+	&.shadow {
+		box-shadow: 0 0 5px rgba(37, 37, 37, 0.3);
+	}
+	&.no-transition {
+		transition: none;
+	}
+	&.hide-side {
+    opacity: 0.3;
+	}
+}

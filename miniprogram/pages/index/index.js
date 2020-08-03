@@ -32,6 +32,12 @@ Page({
 				value: 'iconfont icon-gongge1',
 				color: '#69cdff',
 				url: '../mlui/swiper/index'
+			},
+			{
+				title: 'draggable\nbutton',
+				value: 'iconfont icon-gongge1',
+				color: '#69cdff',
+				url: '../mlui/draggable_button/index'
 			}
 		]
 	},

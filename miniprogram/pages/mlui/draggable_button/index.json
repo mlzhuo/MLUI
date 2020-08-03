@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"ml-draggable-button": "../../../components/ml-draggable-button/ml-draggable-button"
+	}
+}

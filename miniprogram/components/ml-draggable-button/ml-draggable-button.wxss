@@ -1,4 +1,4 @@
-/* components/ml-gird/ml-gird.wxss */
+/* components/ml-draggable-button/ml-draggable-buttons.wxss */
 /**mlui.wxss**/
 @font-face {
   font-family: "iconfont";
@@ -227,20 +227,19 @@ button::after {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.ml-gird {
-  flex-wrap: wrap;
-}
-.ml-gird .gird-item {
-  padding-top: 10rpx;
-  padding-bottom: 10rpx;
-  text-align: center;
-}
-.ml-gird .gird-item .icon-img {
-  line-height: 1;
-  flex: 7;
+.ml-draggable-button {
+  transition: all 0.3s ease;
   overflow: hidden;
+  padding: 0;
+  position: fixed;
+  z-index: 9999;
 }
-.ml-gird .gird-item .text {
-  flex: 3;
-  line-height: 1;
+.ml-draggable-button.shadow {
+  box-shadow: 0 0 5px rgba(37, 37, 37, 0.3);
+}
+.ml-draggable-button.no-transition {
+  transition: none;
+}
+.ml-draggable-button.hide-side {
+  opacity: 0.3;
 }

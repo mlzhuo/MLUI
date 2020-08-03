@@ -1,0 +1,3 @@
+<!-- miniprogram/pages/mlui/draggable_button/index.wxml -->
+<ml-navigation>悬浮按钮</ml-navigation>
+<ml-draggable-button bind:onDragBtnClick="onDragBtnClick"></ml-draggable-button>
