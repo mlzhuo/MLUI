@@ -28,10 +28,10 @@ Page({
 				url: '../mlui/grid/index'
 			},
 			{
-				title: 'banner',
+				title: 'swiper',
 				value: 'iconfont icon-gongge1',
 				color: '#69cdff',
-				url: '../mlui/banner/index'
+				url: '../mlui/swiper/index'
 			}
 		]
 	},

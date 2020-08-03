@@ -1,3 +1,0 @@
-<!-- miniprogram/pages/mlui/banner/index.wxml -->
-<ml-navigation>轮播图</ml-navigation>
-<ml-banner list="{{list}}"></ml-banner>

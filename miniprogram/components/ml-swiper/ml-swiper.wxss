@@ -234,13 +234,11 @@ button::after {
   height: 100%;
   display: inline-block;
 }
-.ml-banner .inner .banner-item image {
-  width: 100%;
-  height: 100%;
-}
+.ml-banner .inner .banner-item image,
 .ml-banner .inner .banner-item video {
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease;
 }
 .ml-banner .point {
   bottom: 5%;
@@ -256,4 +254,15 @@ button::after {
 }
 .ml-banner .point .point-item.active {
   width: 40rpx;
+}
+.ml-banner.with-pre-next .placeholder {
+  width: 10vw;
+  display: inline-block;
+}
+.ml-banner.with-pre-next .banner-item image,
+.ml-banner.with-pre-next .banner-item video {
+  transform: translate(-50%, -50%) scale(0.9, 0.85);
+}
+.ml-banner.with-pre-next .banner-item .active {
+  transform: translate(-50%, -50%) scale(0.95);
 }

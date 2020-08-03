@@ -6,7 +6,7 @@
     "pages/mlui/navigation/index",
     "pages/mlui/drawer/index",
     "pages/mlui/grid/index",
-    "pages/mlui/banner/index"
+    "pages/mlui/swiper/index"
   ],
   "usingComponents": {
     "ml-navigation": "components/ml-navigation/ml-navigation"

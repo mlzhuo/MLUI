@@ -1,0 +1,26 @@
+<!-- components/ml-banner/ml-banner.wxml -->
+<view wx:if="{{!showPreNext}}" class="ml-banner relative" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <view class="inner absolute" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;left:{{_fullScreenLeft}};">
+    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:100vw">
+      <image wx:if="{{item.type=='image'}}" class="absolute position-center" mode="aspectFill" src="{{item.url}}" />
+      <video id="banner-video-{{index}}" class="absolute position-center" wx:if="{{item.type=='video'}}" src="{{item.url}}" muted object-fit="fill" autoplay="{{false}}" controls play-btn-position="center" enable-play-gesture show-mute-btn enable-progress-gesture="{{false}}" show-progress show-fullscreen-btn="{{false}}" />
+    </view>
+  </view>
+  <view class="point absolute flex around" wx:if="{{isDot}}">
+    <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
+  </view>
+</view>
+<!-- 显示前后图片部分 -->
+<view wx:if="{{showPreNext}}" class="ml-banner relative with-pre-next" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;" bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+  <view class="inner absolute" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;left:{{_widthSideLeft}};">
+    <view class="placeholder"></view>
+    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:80vw">
+      <image wx:if="{{item.type=='image'}}" class="absolute position-center radius {{_current==index?'active':''}}" mode="aspectFill" src="{{item.url}}" />
+      <video id="banner-video-{{index}}" class="absolute position-center radius {{_current==index?'active':''}}" wx:if="{{item.type=='video'}}" src="{{item.url}}" muted object-fit="fill" autoplay="{{false}}" controls play-btn-position="center" enable-play-gesture show-mute-btn enable-progress-gesture="{{false}}" show-progress show-fullscreen-btn="{{false}}" />
+    </view>
+    <view class="placeholder"></view>
+  </view>
+  <view class="point absolute flex around" wx:if="{{isDot}}">
+    <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
+  </view>
+</view>

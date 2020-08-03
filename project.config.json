@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxc1b585f336ee118b",
@@ -85,9 +85,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "轮播图",
-					"pathName": "pages/mlui/banner/index",
+					"id": 4,
+					"name": "pages/mlui/swiper/index",
+					"pathName": "pages/mlui/swiper/index",
 					"query": "",
 					"scene": null
 				}
