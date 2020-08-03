@@ -2,8 +2,8 @@
 const cloud = require('wx-server-sdk');
 
 cloud.init({
-  // API 调用都保持和云函数当前所在环境一致
-  env: cloud.DYNAMIC_CURRENT_ENV
+	// API 调用都保持和云函数当前所在环境一致
+	env: cloud.DYNAMIC_CURRENT_ENV
 });
 
 const db = cloud.database();
@@ -12,15 +12,12 @@ const _ = db.command;
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  const res = await col
-    .where({
-      openId: event.openId
-    })
-    .update({
-      data: {
-        times: _.inc(1),
-        date: new Date()
-      }
-    });
-  return {};
+	const res = await col.where({ _id: 'ml-ui-id' }).update({
+		data: {
+			times: _.inc(1),
+			date: new Date()
+		}
+	});
+	const timesData = await col.where({ _id: 'ml-ui-id' }).get();
+	return timesData;
 };
