@@ -1,2 +1,26 @@
 <!-- miniprogram/pages/introduction/index.wxml -->
 <ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>
+<view class="top">
+  <image src="../../images/mlui-logo.png" />
+  <view class="title bold">MLUI 组件库</view>
+  <view class="description">MLUI是一款小程序UI组件库，包括自定义组件以及在官方组件基础上拓展组件。</view>
+  <view class="txt">启动次数</view>
+  <view class="num bold">{{times}}</view>
+</view>
+<view class="items">
+  <view class="item">
+    <view>版本</view>
+    <view>
+      v{{versions[0].version}}
+      <view class="iconfont icon-back_light"></view>
+    </view>
+  </view>
+  <view class="item">
+    <view>第三方资源</view>
+    <view class="iconfont icon-back_light"></view>
+  </view>
+  <view class="item">
+    <view>关于</view>
+    <view class="iconfont icon-back_light"></view>
+  </view>
+</view>

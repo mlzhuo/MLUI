@@ -55,7 +55,7 @@
 page {
   background: #f6f6f6;
   font-size: 32rpx;
-  color: #353535;
+  color: #000;
   overflow-x: hidden;
 }
 button {
@@ -69,7 +69,7 @@ button::after {
 }
 /* color */
 .black {
-  color: #353535;
+  color: #000;
 }
 .blue {
   color: #69cdff;
@@ -134,7 +134,7 @@ button::after {
 }
 /* background */
 .bg-black {
-  background-color: #353535;
+  background-color: #000;
 }
 .bg-blue {
   background-color: #69cdff;
@@ -165,7 +165,7 @@ button::after {
   border: none;
 }
 .border-black {
-  border-color: #353535;
+  border-color: #000;
 }
 .border-blue {
   border-color: #69cdff;

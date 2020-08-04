@@ -1,1 +1,62 @@
 /* miniprogram/pages/introduction/index.wxss */
+.bold {
+	font-weight: bold;
+}
+.top {
+	min-height: 400rpx;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50rpx;
+	box-sizing: border-box;
+	font-size: 28rpx;
+}
+.top image {
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+	margin-bottom: 10rpx;
+	font-size: 32rpx;
+}
+.top .description {
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+	text-align: center;
+	line-height: 50rpx;
+}
+.top .num {
+	font-size: 50rpx;
+}
+
+.items {
+	margin-top: 30rpx;
+	padding: 50rpx;
+	box-sizing: border-box;
+}
+
+.items .item {
+	height: 100rpx;
+	line-height: 100rpx;
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	box-sizing: border-box;
+}
+.items .item:first-child {
+	border-radius: 8rpx 8rpx 0 0;
+}
+.items .item:last-child {
+	border-radius: 0 0 8rpx 8rpx;
+}
+.items .item .iconfont {
+	transform: scaleX(-1);
+	transform: rotateY(180deg);
+}
+.items .item > view {
+	display: flex;
+}
