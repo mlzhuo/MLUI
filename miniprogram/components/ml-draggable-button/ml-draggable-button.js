@@ -1,9 +1,11 @@
 // components/ml-draggable-button/ml-draggable-buttons.js
-const { screenWidth } = wx.getSystemInfoSync();
-let _pageY = 0;
-let _pageX = 0; //滑动过程中记录X坐标，用于判断左划 or 右划
-let _timer;
-let _counter = 0;
+const { screenWidth, screenHeight } = wx.getSystemInfoSync();
+let _startX = 0,
+	_startY = 0,
+	_pageY = 0,
+	_pageX = 0, //滑动过程中记录X坐标，用于判断左划 or 右划
+	_timer,
+	_counter = 0;
 Component({
 	/**
 	 * 组件的属性列表
@@ -65,6 +67,8 @@ Component({
 		touchStart(e) {
 			clearInterval(_timer);
 			const { pageX, pageY } = e.touches[0];
+			_startX = pageX;
+			_startY = pageY;
 			_pageX = pageX;
 			_pageY = pageY;
 			_counter = 0;
@@ -78,13 +82,24 @@ Component({
 			});
 		},
 		touchEnd() {
-			const _top = (_pageY =
-				_pageY < this.data.sideLen ? 'auto;' : `${_pageY * 2}rpx;`);
-			let _style = `left:0;top:${_top}`;
+			// 点击，处理touch 与 tap 的冲突
+			if (
+				Math.abs(_pageX - _startX) < 10 &&
+				Math.abs(_pageY - _startY) < 10
+			) {
+				return;
+			}
+			let _top =
+				_pageY < this.data.sideLen
+					? 'top:auto;'
+					: _pageY > screenHeight - this.data.sideLen
+					? `bottom:0;`
+					: `top:${_pageY * 2}rpx;`;
+			let _style = `left:0;${_top};`;
 			if (_pageX > screenWidth / 2) {
 				_style = `left:${
 					screenWidth - this.data.sideLen
-				}px;top:${_top}`;
+				}px;${_top}`;
 			}
 			this.setData({ _isMoving: false, _style });
 			// 右边
