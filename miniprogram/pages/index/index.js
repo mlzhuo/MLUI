@@ -29,15 +29,21 @@ Page({
 			},
 			{
 				title: 'swiper',
-				value: 'iconfont icon-gongge1',
+				value: '',
 				color: '#69cdff',
 				url: '../mlui/swiper/index'
 			},
 			{
 				title: 'draggable\nbutton',
-				value: 'iconfont icon-gongge1',
+				value: '',
 				color: '#69cdff',
 				url: '../mlui/draggable_button/index'
+			},
+			{
+				title: 'rolling\nnumbers',
+				value: '',
+				color: '#69cdff',
+				url: '../mlui/rolling_numbers/index'
 			}
 		]
 	},

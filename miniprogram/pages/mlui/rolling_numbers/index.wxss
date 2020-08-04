@@ -1,0 +1,9 @@
+/* miniprogram/pages/mlui/rolling_numbers/index.wxss */
+.item {
+	height: 600rpx;
+	background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}

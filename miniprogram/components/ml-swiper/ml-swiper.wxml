@@ -6,7 +6,7 @@
       <video id="banner-video-{{index}}" class="absolute position-center" wx:if="{{item.type=='video'}}" src="{{item.url}}" muted object-fit="fill" autoplay="{{false}}" controls play-btn-position="center" enable-play-gesture show-mute-btn enable-progress-gesture="{{false}}" show-progress show-fullscreen-btn="{{false}}" />
     </view>
   </view>
-  <view class="point absolute flex around" wx:if="{{isDot}}">
+  <view class="point absolute flex space-around" wx:if="{{isDot}}">
     <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
   </view>
 </view>
@@ -20,7 +20,7 @@
     </view>
     <view class="placeholder"></view>
   </view>
-  <view class="point absolute flex around" wx:if="{{isDot}}">
+  <view class="point absolute flex space-around" wx:if="{{isDot}}">
     <view class="point-item {{_current==index?'active':''}}" style="background:{{dotColor}}" wx:for="{{list}}" wx:key="index"></view>
   </view>
 </view>

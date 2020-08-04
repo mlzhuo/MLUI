@@ -1,0 +1,11 @@
+<!-- components/ml-rolling-numbers/ml-rolling-numbers.wxml -->
+<view class="ml-rolling-numbers flex justify-start">
+  <view class="num-view" style="font-size: {{fontSize*2}}rpx;" wx:for="{{_numberList}}" wx:key="index">
+    <view wx:if="{{item>=0}}" class="rolling-view num relative top{{item}} {{speed}}">
+      <view wx:for="{{10}}" wx:key="index">{{index}}</view>
+    </view>
+    <view wx:else class="rolling-view relative">
+      <view>{{item}}</view>
+    </view>
+  </view>
+</view>

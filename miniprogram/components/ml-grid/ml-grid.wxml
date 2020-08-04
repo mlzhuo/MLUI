@@ -1,6 +1,6 @@
 <!-- components/ml-gird/ml-gird.wxml -->
 <view class="ml-gird flex">
-  <view class="gird-item bg-white flex colomn center around relative" style="{{_itemStyle}}" wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="_girdClick">
+  <view class="gird-item bg-white flex colomn center space-around relative" style="{{_itemStyle}}" wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="_girdClick">
     <view class="icon-img flex center" wx:if="{{!onlyTitle}}">
       <view wx:if="{{!img}}" class="{{item.value}}" style="{{_iconStyle}}{{item.color?'color:'+item.color:''}}"></view>
       <image wx:if="{{img}}" style="{{_imgStyle}}" src="{{item.value}}" />

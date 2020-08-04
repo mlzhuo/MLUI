@@ -1,0 +1,54 @@
+/* components/ml-rolling-numbers/ml-rolling-numbers.wxss */
+@import '../../style/mlui.less';
+.ml-rolling-numbers {
+	.num-view {
+		height: 1em;
+		line-height: 1em;
+		overflow: hidden;
+		.rolling-view {
+			transition-property: transform;
+			transition-timing-function: ease;
+			transition-duration: 0.5s;
+			&.num view {
+				height: 1em;
+				line-height: 1em;
+			}
+			&.slow {
+				transition-duration: 0.3s;
+			}
+			&.fast {
+				transition-duration: 1s;
+			}
+			&.top0 {
+				transform: translateY(-0em);
+			}
+			&.top1 {
+				transform: translateY(-1em);
+			}
+			&.top2 {
+				transform: translateY(-2em);
+			}
+			&.top3 {
+				transform: translateY(-3em);
+			}
+			&.top4 {
+				transform: translateY(-4em);
+			}
+			&.top5 {
+				transform: translateY(-5em);
+			}
+			&.top6 {
+				transform: translateY(-6em);
+			}
+			&.top7 {
+				transform: translateY(-7em);
+			}
+			&.top8 {
+				transform: translateY(-8em);
+			}
+			&.top9 {
+				transform: translateY(-9em);
+			}
+		}
+	}
+}

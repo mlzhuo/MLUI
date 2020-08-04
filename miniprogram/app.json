@@ -7,7 +7,8 @@
     "pages/mlui/drawer/index",
     "pages/mlui/grid/index",
     "pages/mlui/swiper/index",
-    "pages/mlui/draggable_button/index"
+    "pages/mlui/draggable_button/index",
+    "pages/mlui/rolling_numbers/index"
   ],
   "usingComponents": {
     "ml-navigation": "components/ml-navigation/ml-navigation"

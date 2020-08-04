@@ -6,9 +6,9 @@
       <slot></slot>
     </view>
     <view class="icon-view absolute flex" style="{{_iconViewStyle}}">
-      <view wx:if="{{isShowBack && _page.length > 1}}" class="iconfont icon-back_light font-20" style="{{_iconStyle}}" bindtap="back"></view>
+      <view wx:if="{{isShowBack && _page.length > 1}}" class="iconfont icon-back_light font-20 bold" style="{{_iconStyle}}" catchtap="back"></view>
       <view wx:if="{{isShowBack&&isShowHome&&_page.length > 1}}" class="iconfont icon-move font-20" style="color:{{color}}"></view>
-      <view wx:if="{{isShowHome}}" class="iconfont icon-home_light font-20" style="{{_iconStyle}}" bindtap="home"></view>
+      <view wx:if="{{isShowHome}}" class="iconfont icon-home_light font-20 bold" style="{{_iconStyle}}" catchtap="home"></view>
     </view>
   </button>
 </view>

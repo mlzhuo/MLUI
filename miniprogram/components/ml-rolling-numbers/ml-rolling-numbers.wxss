@@ -1,3 +1,4 @@
+/* components/ml-rolling-numbers/ml-rolling-numbers.wxss */
 /**mlui.wxss**/
 @font-face {
   font-family: "iconfont";
@@ -231,4 +232,54 @@ button::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.ml-rolling-numbers .num-view {
+  height: 1em;
+  line-height: 1em;
+  overflow: hidden;
+}
+.ml-rolling-numbers .num-view .rolling-view {
+  transition-property: transform;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+.ml-rolling-numbers .num-view .rolling-view.num view {
+  height: 1em;
+  line-height: 1em;
+}
+.ml-rolling-numbers .num-view .rolling-view.slow {
+  transition-duration: 0.3s;
+}
+.ml-rolling-numbers .num-view .rolling-view.fast {
+  transition-duration: 1s;
+}
+.ml-rolling-numbers .num-view .rolling-view.top0 {
+  transform: translateY(0em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top1 {
+  transform: translateY(-1em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top2 {
+  transform: translateY(-2em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top3 {
+  transform: translateY(-3em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top4 {
+  transform: translateY(-4em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top5 {
+  transform: translateY(-5em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top6 {
+  transform: translateY(-6em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top7 {
+  transform: translateY(-7em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top8 {
+  transform: translateY(-8em);
+}
+.ml-rolling-numbers .num-view .rolling-view.top9 {
+  transform: translateY(-9em);
 }
