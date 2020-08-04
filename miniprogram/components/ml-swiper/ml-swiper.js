@@ -12,7 +12,7 @@ Component({
 	properties: {
 		height: {
 			type: Number,
-			value: 250
+			value: 200
 		},
 		list: {
 			type: Array,
@@ -46,7 +46,8 @@ Component({
 	data: {
 		_current: 0, //当前索引
 		_fullScreenLeft: 0, //全屏图片
-		_widthSideLeft: 0 //带前后一部分
+		_widthSideLeft: 0, //带前后一部分
+		_noTransition: false
 	},
 
 	lifetimes: {
@@ -70,6 +71,7 @@ Component({
 			_pageX = pageX;
 			_startX = pageX;
 			_distance = 0;
+			this.setData({ _noTransition: false });
 		},
 		touchMove(e) {
 			_pageX = e.touches[0].pageX;
@@ -115,7 +117,9 @@ Component({
 				if (_current == list.length - 1) {
 					that.setData({
 						_current: 0,
-						_fullScreenLeft: 0
+						_fullScreenLeft: 0,
+						_widthSideLeft: 0,
+						_noTransition: true
 					});
 					return;
 				}
@@ -131,7 +135,7 @@ Component({
 					const videoContext = wx.createVideoContext(
 						'banner-video-' + i,
 						this
-					); //这里对应的视频id
+					);
 					videoContext.pause();
 				}
 			});

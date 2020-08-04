@@ -230,6 +230,9 @@ button::after {
 .ml-banner .inner {
   transition: left 0.3s ease;
 }
+.ml-banner .inner.no-transition {
+  transition: none;
+}
 .ml-banner .inner .banner-item {
   height: 100%;
   display: inline-block;
