@@ -1,4 +1,5 @@
 // miniprogram/pages/mlui/banner/index.js
+const { filePath } = getApp().globalData;
 Page({
 	/**
 	 * 页面的初始数据
@@ -8,14 +9,14 @@ Page({
 		list: [
 			{
 				type: 'video',
-				url: 'cloud://ml-ui-mrr.6d6c-ml-ui-mrr-1302725761/demo.mp4'
+				url: filePath + '/banner/demo.mp4'
 			},
-			{ type: 'image', url: '/images/banner1.png' },
-			{ type: 'image', url: '/images/banner2.png' },
-			{ type: 'image', url: '/images/banner3.png' },
-			{ type: 'image', url: '/images/banner4.png' },
-			{ type: 'image', url: '/images/banner5.png' },
-			{ type: 'image', url: '/images/banner6.png' }
+			{ type: 'image', url: filePath + '/banner/banner1.png' },
+			{ type: 'image', url: filePath + '/banner/banner2.png' },
+			{ type: 'image', url: filePath + '/banner/banner3.png' },
+			{ type: 'image', url: filePath + '/banner/banner4.png' },
+			{ type: 'image', url: filePath + '/banner/banner5.png' },
+			{ type: 'image', url: filePath + '/banner/banner6.png' }
 		]
 	},
 

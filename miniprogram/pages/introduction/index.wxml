@@ -11,7 +11,7 @@
   <view class="item">
     <view>版本</view>
     <view>
-      v{{versions[0].version}}
+      {{version}}
       <view class="iconfont icon-back_light"></view>
     </view>
   </view>

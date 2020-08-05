@@ -11,6 +11,7 @@ const col = db.collection('ml-ui-version');
 
 // 云函数入口函数
 exports.main = async (event, context) => {
+	const { limit } = event;
 	const resVersion = await col
 		.orderBy('date', 'desc')
 		.field({
@@ -19,6 +20,7 @@ exports.main = async (event, context) => {
 			date: true,
 			_id: false
 		})
+		.limit(limit || 999)
 		.get();
 	return resVersion;
 };

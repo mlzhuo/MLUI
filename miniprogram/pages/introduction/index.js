@@ -4,7 +4,7 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		versions: [],
+		version: '',
 		times: 0
 	},
 
@@ -14,9 +14,12 @@ Page({
 	async onLoad(options) {
 		const resVersion = await wx.cloud.callFunction({
 			name: 'getVersions',
-			data: {}
+			data: { limit: 1 }
 		});
 		const versions = resVersion.result.data;
-		this.setData({ versions, times: getApp().globalData.times });
+		this.setData({
+			version: `v${versions[0].version}`,
+			times: getApp().globalData.times
+		});
 	}
 });
