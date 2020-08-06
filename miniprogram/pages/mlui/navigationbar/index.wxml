@@ -1,0 +1,2 @@
+<!-- miniprogram/pages/mlui/navigation/index.wxml -->
+<ml-navigationbar bgColor="#69cdff" color="#fff">自定义导航栏</ml-navigationbar>

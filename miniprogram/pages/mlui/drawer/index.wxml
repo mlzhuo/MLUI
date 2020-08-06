@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/drawer/index.wxml -->
-<ml-navigation>侧边窗口</ml-navigation>
+<ml-navigationbar>侧边窗口</ml-navigationbar>
 <ml-drawer open="{{open}}" position="{{position}}" width="{{width}}" isCustomNav="{{isCustomNav}}" bind:closeDrawer="closeDrawer">
   <view class="drawer-content"></view>
 </ml-drawer>

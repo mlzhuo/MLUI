@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "ml-navigationbar": "../../../components/ml-navigationbar/ml-navigationbar"
+  }
+}

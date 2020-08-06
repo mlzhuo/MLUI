@@ -1,4 +1,5 @@
 // components/ml-rolling-numbers/ml-rolling-numbers.js
+let timer;
 Component({
 	/**
 	 * 组件的属性列表
@@ -37,9 +38,12 @@ Component({
 				}
 			});
 			this.setData({ _numberList: _tempNumberList });
-			setTimeout(v => {
+			timer = setTimeout(v => {
 				this.setData({ _numberList });
 			}, 100);
+		},
+		detached() {
+			clearTimeout(timer);
 		}
 	},
 

@@ -3,15 +3,16 @@
     "pages/index/index",
     "pages/introduction/index",
     "pages/mlui/calendar/index",
-    "pages/mlui/navigation/index",
+    "pages/mlui/navigationbar/index",
     "pages/mlui/drawer/index",
     "pages/mlui/grid/index",
     "pages/mlui/swiper/index",
     "pages/mlui/draggable_button/index",
-    "pages/mlui/rolling_numbers/index"
+    "pages/mlui/rolling_numbers/index",
+    "pages/mlui/timeline/index"
   ],
   "usingComponents": {
-    "ml-navigation": "components/ml-navigation/ml-navigation"
+    "ml-navigationbar": "components/ml-navigationbar/ml-navigationbar"
   },
   "window": {
     "backgroundColor": "#F6F6F6",

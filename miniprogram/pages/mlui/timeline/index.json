@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"ml-timeline": "../../../components/ml-timeline/ml-timeline"
+	}
+}

@@ -1,0 +1,21 @@
+<!-- components/ml-timeline/ml-timeline.wxml -->
+<view class="ml-timeline">
+  <view class="timeline-item">
+    <view class="title">
+      <slot name="timeline-title"></slot>
+    </view>
+    <view class="content flex">
+      <view class="left-icon flex colomn">
+        <view class="icon">
+          <slot name="timeline-icon"></slot>
+        </view>
+        <view class="line" style="background-color:{{lineColor}}"></view>
+      </view>
+      <view class="right-content">
+        <view class="content-inner bg-white radius">
+          <slot name="timeline-content"></slot>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

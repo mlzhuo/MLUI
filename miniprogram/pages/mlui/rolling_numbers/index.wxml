@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/rolling_numbers/index.wxml -->
-<ml-navigation>滚动数字</ml-navigation>
+<ml-navigationbar>滚动数字</ml-navigationbar>
 <view class="item">
   <ml-rolling-numbers number="{{3.141592654}}" font-size="{{40}}"></ml-rolling-numbers>
 </view>

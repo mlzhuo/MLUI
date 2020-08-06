@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wxc1b585f336ee118b",
@@ -102,6 +102,13 @@
 					"id": -1,
 					"name": "滚动数字",
 					"pathName": "pages/mlui/rolling_numbers/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "时间轴",
+					"pathName": "pages/mlui/timeline/index",
 					"scene": null
 				}
 			]

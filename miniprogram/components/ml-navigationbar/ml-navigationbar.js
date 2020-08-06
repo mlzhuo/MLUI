@@ -1,4 +1,4 @@
-// components/ml-navigation/ml-navigation.js
+// components/ml-navigationbar/ml-navigationbar.js
 let _customBarHeight = 65;
 let _statusBarHeight = 20;
 Component({

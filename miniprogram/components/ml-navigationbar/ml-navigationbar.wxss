@@ -1,6 +1,6 @@
-/* components/ml-navigation/ml-navigation.wxss */
+/* components/ml-navigationbar/ml-navigationbar.wxss */
 @import '../../style/mlui.wxss';
-.ml-navigation .navigation-view {
+.ml-navigationbar .navigation-view {
   width: 100vw !important;
   padding: 0;
   margin: 0;
@@ -8,15 +8,15 @@
   border-radius: 0;
   z-index: 9999999;
 }
-.ml-navigation .navigation-view.fixed-view {
+.ml-navigationbar .navigation-view.fixed-view {
   top: 0;
   left: 0;
 }
-.ml-navigation .navigation-view .inner {
+.ml-navigationbar .navigation-view .inner {
   left: 50%;
   transform: translateX(-50%);
 }
-.ml-navigation .navigation-view .icon-view .icon-move {
+.ml-navigationbar .navigation-view .icon-view .icon-move {
   transform: rotate(90deg);
   font-weight: lighter;
   opacity: 0.3;

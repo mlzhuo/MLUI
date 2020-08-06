@@ -1,3 +1,3 @@
 <!-- index.wxml -->
-<ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>
-<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}" only-title="{{true}}"></ml-grid>
+<ml-navigationbar isShowHome="{{false}}">MLUI 组件库</ml-navigationbar>
+<ml-grid bind:girdClick="girdClick" list="{{girdItemListIcon}}"></ml-grid>

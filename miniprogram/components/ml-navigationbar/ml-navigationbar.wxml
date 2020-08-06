@@ -1,5 +1,5 @@
-<!-- components/ml-navigation/ml-navigation.wxml -->
-<view class="ml-navigation">
+<!-- components/ml-navigationbar/ml-navigationbar.wxml -->
+<view class="ml-navigationbar">
   <button class="navigation-view relative" style="{{_customBarStyle}}"></button>
   <button class="navigation-view relative fixed fixed-view" style="{{_customBarStyle}}">
     <view class="inner absolute bold" style="{{_customBarInnerStyle}}">

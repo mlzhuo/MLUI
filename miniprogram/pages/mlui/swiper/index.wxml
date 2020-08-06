@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/swiper/index.wxml -->
-<ml-navigation>轮播图</ml-navigation>
+<ml-navigationbar>轮播图</ml-navigationbar>
 <ml-swiper list="{{list}}"></ml-swiper>
 <view class="split"></view>
 <ml-swiper list="{{list}}" height="{{125}}" show-pre-next></ml-swiper>

@@ -1,3 +1,4 @@
+/* components/ml-timeline/ml-timeline.wxss */
 /**mlui.wxss**/
 @font-face {
   font-family: "iconfont";
@@ -264,4 +265,27 @@ button::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.ml-timeline .timeline-item .content .left-icon {
+  width: 80rpx;
+}
+.ml-timeline .timeline-item .content .left-icon .icon {
+  display: inline-block;
+  margin: 0 auto;
+}
+.ml-timeline .timeline-item .content .left-icon .line {
+  flex: 1;
+  display: inline-block;
+  width: 2rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+.ml-timeline .timeline-item .content .right-content {
+  flex: 1;
+  font-size: 32rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.ml-timeline .timeline-item .content .right-content .content-inner {
+  padding: 20rpx;
 }

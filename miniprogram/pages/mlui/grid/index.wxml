@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/mlui/grid/index.wxml -->
-<ml-navigation>宫格</ml-navigation>
+<ml-navigationbar>宫格</ml-navigationbar>
 <view class="title">图片</view>
 <ml-grid bind:girdClick="girdClick" list="{{girdItemListImg}}" is-only-title="{{false}}" is-no-title="{{false}}" img="{{true}}" height="{{75}}"></ml-grid>
 <view class="title">只显示title</view>

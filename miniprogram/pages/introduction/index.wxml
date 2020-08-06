@@ -1,5 +1,5 @@
 <!-- miniprogram/pages/introduction/index.wxml -->
-<ml-navigation isShowHome="{{false}}">MLUI 组件库</ml-navigation>
+<ml-navigationbar isShowHome="{{false}}">MLUI 组件库</ml-navigationbar>
 <view class="top">
   <image src="../../images/mlui-logo.png" />
   <view class="title bold">MLUI 组件库</view>

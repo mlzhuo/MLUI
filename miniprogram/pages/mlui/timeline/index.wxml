@@ -1,0 +1,20 @@
+<!-- miniprogram/pages/mlui/timeline/index.wxml -->
+<ml-navigationbar>时间轴</ml-navigationbar>
+<view class="content">
+  <ml-timeline wx:for="{{list}}" wx:key="index" line-color="#ccc">
+    <view slot="timeline-title">
+      <view>
+        <text class="day bold font-20">{{item.day}}</text>
+        <text class="month font-14">/{{item.month}}</text>
+      </view>
+    </view>
+    <view slot="timeline-icon">
+      <view class="iconfont {{item.icon}} {{item.color}}"></view>
+    </view>
+    <view slot="timeline-content">
+      <text wx:if="{{index!=0}}">{{item.content}}</text>
+      <text wx:if="{{index==0}}">示例图片：</text>
+      <image wx:if="{{index==0}}" src="{{item.content}}" mode="aspectFit" />
+    </view>
+  </ml-timeline>
+</view>
