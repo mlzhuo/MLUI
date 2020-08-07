@@ -19,7 +19,7 @@ Page({
 				icon: 'icon-xuanzhong',
 				color: 'blue font-20',
 				content:
-					'春雨惊春清谷天\n夏满芒夏暑相连\n秋处露秋寒霜降\n冬雪雪冬小大寒'
+					'春雨惊春清谷天，夏满芒夏暑相连。\n秋处露秋寒霜降，冬雪雪冬小大寒。'
 			},
 			{
 				month: '08',
@@ -27,7 +27,7 @@ Page({
 				icon: 'icon-gaojing',
 				color: 'orange font-20',
 				content:
-					'春雨惊春清谷天\n夏满芒夏暑相连\n秋处露秋寒霜降\n冬雪雪冬小大寒'
+					'春雨惊春清谷天，夏满芒夏暑相连。\n秋处露秋寒霜降，冬雪雪冬小大寒。'
 			},
 			{
 				month: '08',
@@ -35,7 +35,7 @@ Page({
 				icon: 'icon-cuowu',
 				color: 'red font-20',
 				content:
-					'春雨惊春清谷天\n夏满芒夏暑相连\n秋处露秋寒霜降\n冬雪雪冬小大寒'
+					'春雨惊春清谷天，夏满芒夏暑相连。\n秋处露秋寒霜降，冬雪雪冬小大寒。'
 			}
 		]
 	},
