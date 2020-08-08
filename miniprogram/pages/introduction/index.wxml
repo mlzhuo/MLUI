@@ -5,7 +5,9 @@
   <view class="title bold">MLUI 组件库</view>
   <view class="description">MLUI是一款小程序UI组件库，包括自定义组件以及在官方组件基础上拓展组件。</view>
   <view class="txt">启动次数</view>
-  <view class="num bold">{{times}}</view>
+  <view class="num">
+    <ml-rolling-numbers number="{{times}}"></ml-rolling-numbers>
+  </view>
 </view>
 <view class="items">
   <view class="item">

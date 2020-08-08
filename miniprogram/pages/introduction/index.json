@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "ml-rolling-numbers": "../../components/ml-rolling-numbers/ml-rolling-numbers"
+  }
+}
