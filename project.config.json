@@ -109,6 +109,13 @@
 					"id": -1,
 					"name": "时间轴",
 					"pathName": "pages/mlui/timeline/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "瀑布流",
+					"pathName": "pages/mlui/waterfall/index",
 					"scene": null
 				}
 			]

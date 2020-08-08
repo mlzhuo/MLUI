@@ -9,7 +9,8 @@
     "pages/mlui/swiper/index",
     "pages/mlui/draggable_button/index",
     "pages/mlui/rolling_numbers/index",
-    "pages/mlui/timeline/index"
+    "pages/mlui/timeline/index",
+    "pages/mlui/waterfall/index"
   ],
   "usingComponents": {
     "ml-navigationbar": "components/ml-navigationbar/ml-navigationbar"

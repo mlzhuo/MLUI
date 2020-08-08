@@ -1,0 +1,11 @@
+/* components/ml-waterfall/ml-waterfall.wxss */
+@import '../../style/mlui.wxss';
+.ml-waterfall .colomn-item .inner-content .item-inner {
+  overflow: hidden;
+}
+.ml-waterfall .colomn-item .inner-content .item-inner image {
+  width: 100%;
+}
+.ml-waterfall .colomn-item .inner-content .item-inner .sub-info .title {
+  padding: 10rpx;
+}

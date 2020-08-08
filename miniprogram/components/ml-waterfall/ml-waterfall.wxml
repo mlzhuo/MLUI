@@ -1,0 +1,13 @@
+<!-- components/ml-waterfall/ml-waterfall.wxml -->
+<view class="ml-waterfall flex space-between">
+  <view class="colomn-item flex colomn" wx:for="{{_column}}" wx:for-index="colomnIndex" style="width:{{_itemWidth}}px;" wx:key="colomnIndex">
+    <view class="inner-content" id="inner-content-{{colomnIndex}}">
+      <view class="item-inner bg-white radius" wx:for="{{_columns[colomnIndex]}}" wx:key="index" style="margin-bottom:{{gap}}px">
+        <image src="{{item.url}}" mode="widthFix" />
+        <view class="sub-info">
+          <view class="title">{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
