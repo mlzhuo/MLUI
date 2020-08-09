@@ -123,6 +123,13 @@
 					"id": -1,
 					"name": "版本",
 					"pathName": "pages/introduction/versions/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "第三方资源",
+					"pathName": "pages/introduction/resources/index",
 					"scene": null
 				}
 			]

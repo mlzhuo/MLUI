@@ -17,7 +17,7 @@
       <view class="iconfont icon-back_light"></view>
     </view>
   </view>
-  <view class="item">
+  <view class="item" data-url="./resources/index" bindtap="toTap">
     <view>第三方资源</view>
     <view class="iconfont icon-back_light"></view>
   </view>

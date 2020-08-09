@@ -1,0 +1,30 @@
+/* miniprogram/pages/introduction/resources/index.wxss */
+.items {
+  margin-top: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.items .item {
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+.items .item:first-child {
+  border-radius: 8rpx 8rpx 0 0;
+}
+.items .item:last-child {
+  border-radius: 0 0 8rpx 8rpx;
+}
+.items .item > view {
+  display: flex;
+}
+.items .item > view:last-child {
+  opacity: 0.6;
+}

@@ -1,0 +1,16 @@
+<!-- miniprogram/pages/introduction/resources/index.wxml -->
+<ml-navigationbar>第三方资源</ml-navigationbar>
+<view class="items">
+  <view class="item">
+    <view>logo</view>
+    <view>https://www.freelogodesign.org/</view>
+  </view>
+  <view class="item">
+    <view>iconfont</view>
+    <view>https://www.iconfont.cn/</view>
+  </view>
+  <view class="item">
+    <view>插画</view>
+    <view>https://undraw.co/</view>
+  </view>
+</view>
