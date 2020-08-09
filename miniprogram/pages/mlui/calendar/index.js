@@ -8,7 +8,9 @@ Page({
   data: {
     date: '',
     pointDayList: [],
-    isShowPoint: true
+    isShowPoint: true,
+    colors: ['#69cdff', '#4bd197', '#ff5c5c', '#ffcb47', '#ff8ccb'],
+    activeColor: '#69cdff'
   },
 
   /**
@@ -18,8 +20,8 @@ Page({
     const { datestr } = mlutil.formatDate(new Date());
     this.setData({
       date: datestr
-		});
-		this.switchChange({ detail: { value: this.data.isShowPoint } });
+    });
+    this.switchChange({ detail: { value: this.data.isShowPoint } });
   },
 
   tapDateAction(data) {
@@ -69,5 +71,9 @@ Page({
       pointDayList = [];
     }
     this.setData({ pointDayList, isShowPoint: checked });
+  },
+  setColor(e) {
+    const { color } = e.currentTarget.dataset;
+    this.setData({ activeColor: color });
   }
 });

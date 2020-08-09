@@ -14,6 +14,10 @@ Component({
     pointDayList: {
       type: Array,
       value: []
+    },
+    activeColor: {
+      type: String,
+      value: '#69cdff'
     }
   },
 

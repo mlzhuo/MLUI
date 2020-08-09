@@ -7,11 +7,14 @@
   </picker>
   <view class="next" bindtap="nextMonth">下月</view>
 </view>
-<ml-calendar bind:tapDateAction="tapDateAction" selectedDate="{{date}}" pointDayList="{{pointDayList}}"></ml-calendar>
+<ml-calendar selectedDate="{{date}}" pointDayList="{{pointDayList}}" active-color="{{activeColor}}" bind:tapDateAction="tapDateAction"></ml-calendar>
 <view class="result">当前选择日期：{{date}}</view>
 <view class="switch">
   显示事件记录
-  <switch checked="{{isShowPoint}}" color="#69cdff" bindchange="switchChange" />
+  <switch checked="{{isShowPoint}}" color="{{activeColor}}" bindchange="switchChange" />
+</view>
+<view class="colors">
+  <view wx:for="{{colors}}" style="background:{{item}}" wx:key="index" data-color="{{item}}" bindtap="setColor"></view>
 </view>
 <wxs module="tool">
   module.exports = {

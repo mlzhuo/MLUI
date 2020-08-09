@@ -19,10 +19,23 @@
   flex: 1;
 }
 .result {
-  margin-top: 100rpx;
+  margin-top: 50rpx;
   text-align: center;
 }
 .switch {
   text-align: center;
   margin-top: 50rpx;
+}
+.colors {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+  box-sizing: border-box;
+  margin-top: 50rpx;
+}
+.colors > view {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
 }

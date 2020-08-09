@@ -7,9 +7,9 @@
   </view>
   <view class="day">
     <view class="day-line flex space-around" wx:for="{{_dayList.length}}" wx:for-index="index" wx:key="index">
-      <view class="day-item relative text-center round {{item._date===_today?'blue border border-blue':''}} {{_chooseDay===item._date?'no-border white bg-blue bold':''}}" data-date="{{item._date}}" wx:for="{{_dayList[index]}}" wx:key="index" bindtap="_dayTap">
+      <view class="day-item relative text-center round {{_chooseDay===item._date?'no-border bold':''}}" style="{{item._date===_today?'color: '+activeColor+';border:2rpx solid '+activeColor+';':''}}{{_chooseDay===item._date?'color:#fff'+';background: '+activeColor+';':''}}" data-date="{{item._date}}" wx:for="{{_dayList[index]}}" wx:key="index" bindtap="_dayTap">
         {{item._date===_today?'今':item._day}}
-        <view class="day-flag absolute round {{_chooseDay===item._date?'bg-white':'bg-blue'}}" wx:if="{{item._isShowPoint}}"></view>
+        <view class="day-flag absolute round {{_chooseDay===item._date?'bg-white':'bg-blue'}}" style="{{_chooseDay===item._date?'background:#fff;':'background:'+activeColor+';'}}" wx:if="{{item._isShowPoint}}"></view>
       </view>
     </view>
   </view>
