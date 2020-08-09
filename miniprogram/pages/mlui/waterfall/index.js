@@ -40,7 +40,6 @@ Page({
   },
 
   onReachBottom() {
-    console.log(1);
     const { list } = this.data;
     this.setData({
       list: [...list, ...listData]

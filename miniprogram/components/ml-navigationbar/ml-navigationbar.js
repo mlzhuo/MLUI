@@ -75,12 +75,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    back() {
+    _back() {
       wx.navigateBack({
         delta: 1
       });
     },
-    home() {
+    _home() {
       wx.reLaunch({
         url: '/pages/index/index'
       });

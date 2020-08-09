@@ -25,13 +25,13 @@ Component({
           _today: mlutil.formatDate(new Date()).datestr
         },
         () => {
-          this.setMonthDay();
+          this._setMonthDay();
         }
       );
     },
     pointDayList(newVal) {
       _pointDayList = newVal;
-      this.setMonthDay();
+      this._setMonthDay();
     }
   },
 
@@ -48,7 +48,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    setMonthDay() {
+    _setMonthDay() {
       const defaultTime = ' 00:00:00';
       const { selectedDate } = this.data;
       const { w, datestr, len } = mlutil.formatDate(

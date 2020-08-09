@@ -23,6 +23,16 @@ class MLUIUTIL {
     const dateObj = { y, M, d, h, m, s, w, datestr, len };
     return dateObj;
   }
+
+  getRandom(start, end, addZero = false) {
+    let differ = end - start;
+    let random = Math.random();
+    let num = parseInt(start + differ * random);
+    if (addZero) {
+      num = this.addZero(num);
+    }
+    return num;
+  }
 }
 
 export default MLUIUTIL;

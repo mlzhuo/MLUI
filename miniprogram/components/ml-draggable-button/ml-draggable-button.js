@@ -53,7 +53,7 @@ Component({
 				_counter: 0,
 				_style: `${this.data.position}:0;top:${this.data.top * 2}rpx;`
 			});
-			this.startTimer();
+			this._startTimer();
 		},
 		detached() {
 			clearInterval(_timer);
@@ -64,7 +64,7 @@ Component({
 	 * 组件的方法列表
 	 */
 	methods: {
-		touchStart(e) {
+		_touchStart(e) {
 			clearInterval(_timer);
 			const { pageX, pageY } = e.touches[0];
 			_startX = pageX;
@@ -74,14 +74,14 @@ Component({
 			_counter = 0;
 			this.setData({ _isHide: false, _isMoving: true });
 		},
-		touchMove(e) {
+		_touchMove(e) {
 			_pageX = e.touches[0].pageX - this.data.sideLen / 2;
 			_pageY = e.touches[0].pageY - this.data.sideLen / 2;
 			this.setData({
 				_style: `left:${_pageX * 2}rpx;top:${_pageY * 2}rpx;`
 			});
 		},
-		touchEnd() {
+		_touchEnd() {
 			// 点击，处理touch 与 tap 的冲突
 			if (
 				Math.abs(_pageX - _startX) < 10 &&
@@ -103,9 +103,9 @@ Component({
 			}
 			this.setData({ _isMoving: false, _style });
 			// 右边
-			this.startTimer(_pageX > screenWidth / 2);
+			this._startTimer(_pageX > screenWidth / 2);
 		},
-		startTimer(isRight = true) {
+		_startTimer(isRight = true) {
 			const that = this;
 			const { autoHide, time, _style, sideLen } = that.data;
 			const [left, right] = _style.split(';');

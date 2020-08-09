@@ -1,2 +1,2 @@
 <!-- components/ml-draggable-button/ml-draggable-buttons.wxml -->
-<button class="ml-draggable-button round {{shadow?'shadow':''}} {{_isHide?'hide-side':''}} {{_isMoving?'no-transition':''}}" style="width:{{sideLen*2}}rpx;height:{{sideLen*2}}rpx;background:{{bgColor}};{{_style}}" bindtouchstart='touchStart' catchtouchmove='touchMove' bindtouchend='touchEnd' catchtap="_tapTo"></button>
+<button class="ml-draggable-button round {{shadow?'shadow':''}} {{_isHide?'hide-side':''}} {{_isMoving?'no-transition':''}}" style="width:{{sideLen*2}}rpx;height:{{sideLen*2}}rpx;background:{{bgColor}};{{_style}}" bindtouchstart='_touchStart' catchtouchmove='_touchMove' bindtouchend='_touchEnd' catchtap="_tapTo"></button>

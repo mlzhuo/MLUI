@@ -53,7 +53,7 @@ Component({
 	lifetimes: {
 		attached() {
 			if (this.data.autoPlay) {
-				this.play();
+				this._play();
 			}
 		},
 		detached() {
@@ -65,7 +65,7 @@ Component({
 	 * 组件的方法列表
 	 */
 	methods: {
-		touchStart(e) {
+		_touchStart(e) {
 			clearInterval(_timer);
 			const { pageX } = e.touches[0];
 			_pageX = pageX;
@@ -73,12 +73,12 @@ Component({
 			_distance = 0;
 			this.setData({ _noTransition: false });
 		},
-		touchMove(e) {
+		_touchMove(e) {
 			_pageX = e.touches[0].pageX;
 			_distance = _pageX - _startX;
 			_goLeft = _distance < 0; // 左划
 		},
-		touchEnd() {
+		_touchEnd() {
 			const { list, autoPlay, _current } = this.data;
 			if (Math.abs(_distance) < 20) {
 				return;
@@ -92,7 +92,7 @@ Component({
 			index = index < 0 ? 0 : index;
 			index = index > list.length - 1 ? list.length - 1 : index;
 			if (list[index].type !== 'video') {
-				this.stopVideo();
+				this._stopVideo();
 			}
 			this.setData(
 				{
@@ -102,12 +102,12 @@ Component({
 				},
 				() => {
 					if (autoPlay) {
-						this.play();
+						this._play();
 					}
 				}
 			);
 		},
-		play() {
+		_play() {
 			const that = this;
 			if (_timer) {
 				clearInterval(_timer);
@@ -123,13 +123,13 @@ Component({
 					});
 					return;
 				}
-				that.touchStart({ touches: [{ pageX: 25 }] });
-				that.touchMove({ touches: [{ pageX: 0 }] });
-				that.touchEnd();
+				that._touchStart({ touches: [{ pageX: 25 }] });
+				that._touchMove({ touches: [{ pageX: 0 }] });
+				that._touchEnd();
 			}, that.data.time);
 		},
 
-		stopVideo() {
+		_stopVideo() {
 			this.data.list.forEach((v, i) => {
 				if (v.type === 'video') {
 					const videoContext = wx.createVideoContext(

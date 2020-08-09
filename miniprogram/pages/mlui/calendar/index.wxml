@@ -9,6 +9,10 @@
 </view>
 <ml-calendar bind:tapDateAction="tapDateAction" selectedDate="{{date}}" pointDayList="{{pointDayList}}"></ml-calendar>
 <view class="result">当前选择日期：{{date}}</view>
+<view class="switch">
+  显示事件记录
+  <switch checked="{{isShowPoint}}" color="#69cdff" bindchange="switchChange" />
+</view>
 <wxs module="tool">
   module.exports = {
     setDate: function(dateStr) {
