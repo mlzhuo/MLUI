@@ -1,3 +1,3 @@
 <!-- miniprogram/pages/mlui/waterfall/index.wxml -->
 <ml-navigationbar>瀑布流</ml-navigationbar>
-<ml-waterfall list="{{list}}" column="{{column}}" gap="{{gap}}"></ml-waterfall>
+<ml-waterfall list="{{list}}" column="{{column}}" gap="{{gap}}" bind:onWaterfallClick="onWaterfallClick"></ml-waterfall>

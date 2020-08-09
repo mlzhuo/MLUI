@@ -45,5 +45,9 @@ Page({
     this.setData({
       list: [...list, ...listData]
     });
+  },
+
+  onWaterfallClick(e) {
+    const item = e.detail;
   }
 });

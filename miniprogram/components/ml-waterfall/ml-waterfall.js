@@ -24,7 +24,7 @@ Component({
       if (newVal.length === 0) {
         return;
       }
-      this.initData();
+      this._initData();
     }
   },
 
@@ -58,7 +58,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    async initData() {
+    async _initData() {
       const { list } = this.data;
       for (let i = 0; i < list.length; i++) {
         const { _columns, _columnsHeights } = this.data;
@@ -68,10 +68,10 @@ Component({
         );
         _columns[minHeightIndex].push(item);
         this.setData({ _columns });
-        await this.setColumnHeight();
+        await this._setColumnHeight();
       }
     },
-    setColumnHeight() {
+    _setColumnHeight() {
       const that = this;
       const { _columnsHeights } = that.data;
       let _newColumnsHeights = [];
@@ -87,6 +87,10 @@ Component({
           });
         });
       });
+    },
+    _itemClick(e) {
+      const { item } = e.currentTarget.dataset;
+      this.triggerEvent('onWaterfallClick', item);
     }
   }
 });
