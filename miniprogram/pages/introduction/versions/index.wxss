@@ -1,0 +1,7 @@
+/* miniprogram/pages/introduction/versions/index.wxss */
+.content {
+  padding: 30rpx;
+}
+.content image {
+  width: 100%;
+}

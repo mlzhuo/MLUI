@@ -10,7 +10,8 @@
     "pages/mlui/draggable_button/index",
     "pages/mlui/rolling_numbers/index",
     "pages/mlui/timeline/index",
-    "pages/mlui/waterfall/index"
+    "pages/mlui/waterfall/index",
+    "pages/introduction/versions/index"
   ],
   "usingComponents": {
     "ml-navigationbar": "components/ml-navigationbar/ml-navigationbar"

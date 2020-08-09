@@ -1,0 +1,19 @@
+<!-- miniprogram/pages/introduction/versions/index.wxml -->
+<ml-navigationbar>版本</ml-navigationbar>
+<view class="content">
+  <ml-timeline wx:for="{{list}}" wx:key="index" line-color="#ddd">
+    <view slot="timeline-title">
+      <view>
+        <text class="day bold font-20">{{item.day}}</text>
+        <text class="month font-14">/{{item.month}}</text>
+      </view>
+    </view>
+    <view slot="timeline-icon">
+      <view class="iconfont icon-yuandian-xuanzhongcopy blue"></view>
+    </view>
+    <view slot="timeline-content">
+      <view class="bold">v{{item.version}}</view>
+      <text>{{item.description}}</text>
+    </view>
+  </ml-timeline>
+</view>

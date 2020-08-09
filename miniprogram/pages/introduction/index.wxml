@@ -10,7 +10,7 @@
   </view>
 </view>
 <view class="items">
-  <view class="item">
+  <view class="item" data-url="./versions/index" bindtap="toTap">
     <view>版本</view>
     <view>
       {{version}}

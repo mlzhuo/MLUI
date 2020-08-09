@@ -116,6 +116,13 @@
 					"id": -1,
 					"name": "瀑布流",
 					"pathName": "pages/mlui/waterfall/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "版本",
+					"pathName": "pages/introduction/versions/index",
 					"scene": null
 				}
 			]
