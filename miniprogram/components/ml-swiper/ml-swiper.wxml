@@ -1,7 +1,7 @@
 <!-- components/ml-banner/ml-banner.wxml -->
 <view wx:if="{{!showPreNext}}" class="ml-banner relative" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;" bindtouchstart='_touchStart' catchtouchmove='_touchMove' bindtouchend='_touchEnd'>
   <view class="inner absolute {{_noTransition?'no-transition':''}}" style="width:{{list.length*100}}vw;height:{{height*2}}rpx;left:{{_fullScreenLeft}};">
-    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:100vw">
+    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:100vw" data-item="{{item}}" bindtap="_itemClick">
       <image wx:if="{{item.type=='image'}}" class="absolute position-center" mode="aspectFill" src="{{item.url}}" />
       <video id="banner-video-{{index}}" class="absolute position-center" wx:if="{{item.type=='video'}}" src="{{item.url}}" muted object-fit="fill" autoplay="{{false}}" controls play-btn-position="center" enable-play-gesture show-mute-btn enable-progress-gesture="{{false}}" show-progress show-fullscreen-btn="{{false}}" />
     </view>
@@ -14,7 +14,7 @@
 <view wx:if="{{showPreNext}}" class="ml-banner relative with-pre-next" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;" bindtouchstart='_touchStart' catchtouchmove='_touchMove' bindtouchend='_touchEnd'>
   <view class="inner absolute {{_noTransition?'no-transition':''}}" style="width:{{list.length*80 + 20}}vw;height:{{height*2}}rpx;left:{{_widthSideLeft}};">
     <view class="placeholder"></view>
-    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:80vw">
+    <view class="banner-item relative" wx:for="{{list}}" wx:key="index" style="width:80vw" data-item="{{item}}" bindtap="_itemClick">
       <image wx:if="{{item.type=='image'}}" class="absolute position-center radius {{_current==index?'active':''}}" mode="aspectFill" src="{{item.url}}" />
       <video id="banner-video-{{index}}" class="absolute position-center radius {{_current==index?'active':''}}" wx:if="{{item.type=='video'}}" src="{{item.url}}" muted object-fit="fill" autoplay="{{false}}" controls play-btn-position="center" enable-play-gesture show-mute-btn enable-progress-gesture="{{false}}" show-progress show-fullscreen-btn="{{false}}" />
     </view>

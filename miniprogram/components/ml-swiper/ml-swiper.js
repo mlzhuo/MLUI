@@ -139,6 +139,10 @@ Component({
 					videoContext.pause();
 				}
 			});
+		},
+		_itemClick(e) {
+			const { item } = e.currentTarget.dataset;
+			this.triggerEvent('itemClick', item);
 		}
 	}
 });
