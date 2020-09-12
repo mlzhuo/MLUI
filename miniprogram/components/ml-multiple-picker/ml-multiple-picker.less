@@ -1,0 +1,103 @@
+/* components/ml-multiple-picker/ml-multiple-picker.wxss */
+.multiple-picker {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  /*cover-view 不生效*/
+  /*pointer-events: none;*/
+  &.open {
+    left: 0;
+    opacity: 1;
+    /*pointer-events: auto;*/
+    .list-view {
+      transform: translateY(-100%);
+    }
+  }
+  .list-view {
+    height: 45%;
+    width: 100%;
+    padding-bottom: 40rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    bottom: -45%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+    &.android {
+      border-radius: 20rpx 20rpx 0 0;
+    }
+    &.ios {
+      border-radius: 0;
+    }
+    .action-view {
+      height: 80rpx;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      &.ios {
+        justify-content: space-between;
+        top: 0;
+        border-bottom: 2rpx solid #f7f7f7;
+        .cancel-btn,
+        .confirm-btn {
+          width: 150rpx;
+          margin: 0;
+          background: none;
+          color: #07c160;
+        }
+        .cancel-btn {
+          color: #7f7f7f;
+        }
+      }
+      &.android {
+        top: auto;
+        bottom: 40rpx;
+        justify-content: center;
+        .cancel-btn,
+        .confirm-btn {
+          width: 225rpx;
+          margin: 0 20rpx;
+        }
+        .cancel-btn {
+          color: #07c160;
+        }
+      }
+    }
+    .list-content {
+      height: 100%;
+      box-sizing: border-box;
+      overflow-y: scroll;
+      &.ios {
+        margin-top: 120rpx;
+      }
+      &.android {
+        margin-top: 40rpx;
+        margin-bottom: 100rpx;
+      }
+      .list-item {
+        padding: 0 50rpx;
+        line-height: 70rpx;
+        text-align: center;
+        color: #353535;
+        font-size: 32rpx;
+        &.active {
+          color: #07c160;
+        }
+      }
+    }
+  }
+}

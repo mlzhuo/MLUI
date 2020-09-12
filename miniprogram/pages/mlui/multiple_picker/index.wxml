@@ -1,0 +1,6 @@
+<!-- miniprogram/pages/mlui/multiple_picker/index.wxml -->
+<ml-navigationbar>多选Picker</ml-navigationbar>
+<ml-multiple-picker os="{{os}}" pickerList="{{list}}" checkList="{{checkList}}" key="{{key}}" labelKey="{{labelKey}}" open="{{open}}" bind:confirm="confirmPick"></ml-multiple-picker>
+<button class="btn" type="primary" data-os="android" bindtap="onTap">Android</button>
+<button class="btn" type="primary" data-os="ios" bindtap="onTap">iOS</button>
+<button class="btn" type="primary" data-os="" bindtap="onTap">自动</button>

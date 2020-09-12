@@ -56,6 +56,12 @@ Page({
         value: 'iconfont icon-pubuliu',
         color: '#69cdff',
         url: '../mlui/waterfall/index'
+      },
+      {
+        title: 'MultiplePicker',
+        value: 'iconfont icon-duoxuanti',
+        color: '#69cdff',
+        url: '../mlui/multiple_picker/index'
       }
     ]
   },

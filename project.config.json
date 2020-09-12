@@ -130,6 +130,13 @@
 					"id": -1,
 					"name": "第三方资源",
 					"pathName": "pages/introduction/resources/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "多选picker",
+					"pathName": "pages/mlui/multiple_picker/index",
 					"scene": null
 				}
 			]

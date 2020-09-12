@@ -1,0 +1,27 @@
+<!-- components/ml-multiple-picker/ml-multiple-picker.wxml -->
+<cover-view class="multiple-picker {{_open?'open':''}}">
+  <cover-view class="list-view {{_os}}">
+    <cover-view class="action-view {{_os}}">
+      <button type="default" size="mini" class="cancel-btn" catchtap="_cancel">取消</button>
+      <button type="primary" size="mini" class="confirm-btn" catchtap="_confirm">确定</button>
+    </cover-view>
+    <cover-view class="list-content {{_os}}">
+      <cover-view class="list-item {{tool.isActive(item, _checkList, key)?'active':''}}" wx:for="{{pickerList}}" wx:key="index" data-item="{{item}}" catchtap="_itemTap">
+        {{item[labelKey]}}
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</cover-view>
+<wxs module="tool">
+  module.exports = {
+    isActive: function(item, list, key) {
+      var temp = list.filter(function(v) {
+        return v[key] == item[key]
+      });
+			if (temp.length) {
+				return true
+      } 
+      return false
+    }
+  }
+</wxs>

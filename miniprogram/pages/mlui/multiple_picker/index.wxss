@@ -1,0 +1,4 @@
+/* miniprogram/pages/mlui/multiple_picker/index.wxss */
+button {
+  margin-top: 100rpx;
+}

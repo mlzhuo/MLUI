@@ -12,7 +12,8 @@
     "pages/mlui/timeline/index",
     "pages/mlui/waterfall/index",
     "pages/introduction/versions/index",
-    "pages/introduction/resources/index"
+    "pages/introduction/resources/index",
+    "pages/mlui/multiple_picker/index"
   ],
   "usingComponents": {
     "ml-navigationbar": "components/ml-navigationbar/ml-navigationbar"

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ml-multiple-picker": "../../../components/ml-multiple-picker/ml-multiple-picker"
+  }
+}
